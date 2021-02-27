@@ -5,7 +5,7 @@
  
     <div class="position-absolute top-10 start-50 translate-middle-x">
     <a class="navbar-brand" href="<?= base_url('/'); ?>">
-        <img src="<?=base_url('images/logo_def.png');?>" alt="SMPN 1 Wonorejo" width="40" height="40" style="border-radius: 100px;">
+        <img src="images/logo.png" alt="SMPN 1 Wonorejo" width="40" height="40" style="border-radius: 100px;">
         SMPN 1 Wonorejo
     </a>
     </div>

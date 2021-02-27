@@ -6,6 +6,7 @@
     <div class="position-absolute top-10 start-50 translate-middle-x">
     <a class="navbar-brand" href="<?= base_url('/'); ?>">
         <img src="images/logo.png" alt="SMPN 1 Wonorejo" width="40" height="40" style="border-radius: 100px;">
+        <!-- Kalau masih tidak bisa, src untuk gambarnya bisa pakai link yg ini https://i.imgur.com/EOvVWjz.png -->
         SMPN 1 Wonorejo
     </a>
     </div>

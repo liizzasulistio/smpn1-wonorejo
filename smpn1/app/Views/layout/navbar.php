@@ -7,7 +7,7 @@
     <a class="navbar-brand" href="<?= base_url('/'); ?>">
         <img src="images/logo.png" alt="SMPN 1 Wonorejo" width="40" height="40" style="border-radius: 100px;">
         <!-- Kalau masih tidak bisa, src untuk gambarnya bisa pakai link yg ini https://i.imgur.com/EOvVWjz.png -->
-        SMPN 1 Wonorejo
+        SMPN 1 WONOREJO
     </a>
     </div>
     </div>
@@ -20,7 +20,7 @@
 </nav>
 
 <!-- Bagian ini nanti pakai looping dari database, jadi harus modif Back-End lagi -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 40px">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 45px">
     <div class="container-fluid justify-content-center">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 

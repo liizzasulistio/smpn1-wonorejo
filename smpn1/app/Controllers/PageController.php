@@ -6,4 +6,9 @@ class PageController extends BaseController
     {
         return view('index');
     }
+
+    public function profile()
+    {
+        return view('profile_kepsek');
+    }
 }

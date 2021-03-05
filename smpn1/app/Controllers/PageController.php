@@ -1,4 +1,6 @@
-<?php namespace App\Controllers;
+<?php
+
+namespace App\Controllers;
 
 class PageController extends BaseController
 {
@@ -9,6 +11,16 @@ class PageController extends BaseController
 
     public function profile()
     {
-        return view('profile_kepsek');
+        return view('profile/kepalaSekolah');
+    }
+
+    public function adiwiyata()
+    {
+        return view('kegiatan/adiwiyata');
+    }
+
+    public function detail()
+    {
+        return view('kegiatan/detailArtikel');
     }
 }

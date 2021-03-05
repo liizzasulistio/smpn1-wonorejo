@@ -35,6 +35,8 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'PageController::index');
 
 $routes->get('/profile', 'PageController::profile');
+$routes->get('/adiwiyata', 'PageController::adiwiyata');
+$routes->get('/detail_artikel', 'PageController::detail');
 
 /*
  * --------------------------------------------------------------------

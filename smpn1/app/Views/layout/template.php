@@ -11,11 +11,19 @@
     <link rel="stylesheet" href="/css/styles.css">
     <!-- Deklarasi Font dan Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- font Roboto untuk judul setiap halaman navbar -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+    <!-- font roboto untuk detial artikel -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <!-- font pairflay untuk keterangan dari judul setiap halaman navbar -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
+
     <title>Judul Halaman</title> <!-- Nanti diganti berdasarkan dengan halaman yg sedang dibuka -->
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
         footer {
             background: #f1f6f9;
             padding: 20px;
@@ -64,8 +72,13 @@
                     <p><a class="text-decoration-none" href="#">gambar</a></p>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col mt-5">
+                    <hr>
+                    <p class="float-end">
+                        <a class="link-secondary" href="#">Back to top</a>
+                    </p>
                     <p>Copyright © 2020 - 2021 SMPN 1 WONOREJO All rights reserved.</p>
                 </div>
             </div>

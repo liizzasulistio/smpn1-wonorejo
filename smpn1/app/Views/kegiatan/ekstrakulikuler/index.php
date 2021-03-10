@@ -5,8 +5,8 @@
 <!-- header -->
 <div class="pt-5 pb-3">
     <div class="container text-center">
-        <h1 style="font-family: 'Roboto', sans-serif;" class="mb-3">Adiwiyata</h1>
-        <h3 style="font-family: 'Playfair Display', serif;">portofolio kegiatan adiwiyata</h3>
+        <h1 style="font-family: 'Roboto', sans-serif;" class="mb-3">Ekstrakulikuler</h1>
+        <h3 style="font-family: 'Playfair Display', serif;">[ detail ekstrakulikuler ]</h3>
     </div>
 </div>
 

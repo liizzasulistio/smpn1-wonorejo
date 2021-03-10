@@ -36,10 +36,15 @@ $routes->get('/', 'PageController::index');
 
 // menu Profile
 $routes->get('/profile', 'PageController::profile');		//kepala sekolah
+$routes->get('/profile_guru', 'PageController::profile_pendidik');		//pendidik
 
 // menu Kegiatan
 $routes->get('/adiwiyata', 'PageController::adiwiyata');	
-$routes->get('/detail', 'PageController::detail');			//detail artikel
+$routes->get('/detail', 'PageController::detail_adiwiyata');			//detail artikel
+
+// menu Kegiatan
+$routes->get('/ekstrakulikuler', 'PageController::ekstra');	
+$routes->get('/detail_ekstra', 'PageController::detail_ekstra');			//detail artikel
 
 /*
  * --------------------------------------------------------------------

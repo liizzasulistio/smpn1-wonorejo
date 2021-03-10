@@ -34,9 +34,12 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'PageController::index');
 
-$routes->get('/profile', 'PageController::profile');
-$routes->get('/adiwiyata', 'PageController::adiwiyata');
-$routes->get('/detail_artikel', 'PageController::detail');
+// menu Profile
+$routes->get('/profile', 'PageController::profile');		//kepala sekolah
+
+// menu Kegiatan
+$routes->get('/adiwiyata', 'PageController::adiwiyata');	
+$routes->get('/detail', 'PageController::detail');			//detail artikel
 
 /*
  * --------------------------------------------------------------------

@@ -14,11 +14,11 @@ class PageController extends BaseController
 
     public function adiwiyata()
     {
-        return view('kegiatan/adiwiyata');
+        return view('kegiatan/adiwiyata/index');
     }
 
     public function detail()
     {
-        return view('kegiatan/detailArtikel');
+        return view('kegiatan/adiwiyata/detail');
     }
 }

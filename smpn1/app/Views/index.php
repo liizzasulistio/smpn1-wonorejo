@@ -27,7 +27,7 @@
             </p>
             <a href="#" class="float-md-end">Baca Selengkapnya <img src="icons/arrow-right.svg" /></a>
         </div>
-        
+
         <div class="col-md-4">
             <img src="images/img_full.png" style="width: 60%; height: 100%" class="inline">
         </div>
@@ -56,16 +56,16 @@
         </div>
     </div>
 
-</div> 
+</div>
 <!-- /main -->
 
 <hr>
 
 <div class="text-center container">
     <div class="row py-md-5 py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h2>TULISAN TERBARU</h2>
-      </div>
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h2>TULISAN TERBARU</h2>
+        </div>
     </div>
 </div>
 
@@ -89,7 +89,7 @@
 
         <div class="col">
             <div class="card shadow-sm">
-            <img src="images/img_full.png" width="100%" height="225" class="bd-placeholder-img card-img-top">
+                <img src="images/img_full.png" width="100%" height="225" class="bd-placeholder-img card-img-top">
                 <div class="card-body">
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <div class="d-flex justify-content-between align-items-center">
@@ -105,7 +105,7 @@
 
         <div class="col">
             <div class="card shadow-sm">
-            <img src="images/img_full.png" width="100%" height="225" class="bd-placeholder-img card-img-top">
+                <img src="images/img_full.png" width="100%" height="225" class="bd-placeholder-img card-img-top">
                 <div class="card-body">
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <div class="d-flex justify-content-between align-items-center">

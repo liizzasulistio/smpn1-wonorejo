@@ -7,8 +7,7 @@ $routes = Services::routes();
 
 // Load the system's routing file first, so that the app and ENVIRONMENT
 // can override as needed.
-if (file_exists(SYSTEMPATH . 'Config/Routes.php'))
-{
+if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
 	require SYSTEMPATH . 'Config/Routes.php';
 }
 
@@ -38,13 +37,17 @@ $routes->get('/', 'PageController::index');
 $routes->get('/profile', 'PageController::profile');		//kepala sekolah
 $routes->get('/profile_guru', 'PageController::profile_pendidik');		//pendidik
 
-// menu Kegiatan
-$routes->get('/adiwiyata', 'PageController::adiwiyata');	
-$routes->get('/detail', 'PageController::detail_adiwiyata');			//detail artikel
+// menu Kegiatan adiwiyata
+$routes->get('/adiwiyata', 'AdiwiyataController::index');
+$routes->get('/detail_adiwiyata', 'AdiwiyataController::detail');			//detail artikel
 
-// menu Kegiatan
-$routes->get('/ekstrakulikuler', 'PageController::ekstra');	
-$routes->get('/detail_ekstra', 'PageController::detail_ekstra');			//detail artikel
+// menu Kegiatan ekstrakulikuler
+$routes->get('/ekstrakulikuler', 'ExtraController::index');
+$routes->get('/detail_ekstrakulikuler', 'ExtraController::detail');			//detail artikel
+
+// menu Kegiatan kreasi dan inovasi
+$routes->get('/kreasi', 'CreationController::index');
+$routes->get('/detail_kreasi', 'CreationController::detail');			//detail artikel
 
 /*
  * --------------------------------------------------------------------
@@ -59,7 +62,6 @@ $routes->get('/detail_ekstra', 'PageController::detail_ekstra');			//detail arti
  * You will have access to the $routes object within that file without
  * needing to reload it.
  */
-if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php'))
-{
+if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 	require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }

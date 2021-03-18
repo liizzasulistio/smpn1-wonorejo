@@ -2,16 +2,19 @@
 
 <header class="site-header sticky-top">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-  
+  <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark flex-sm-nowrap flex-wrap">
+    <div class="container-fluid">
       <div class="position-absolute top-10 start-50 translate-middle-x">
-      <a class="navbar-brand" href="<?= base_url('/'); ?>">
-          <img src="images/logo.png" alt="SMPN 1 Wonorejo" width="40" height="40" style="border-radius: 100px;">
-          <!-- Kalau masih tidak bisa, src untuk gambarnya bisa pakai link yg ini https://i.imgur.com/EOvVWjz.png -->
-          SMPN 1 WONOREJO
-      </a>
+        <button class="navbar-toggler flex-grow-sm-1 flex-grow-0 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar5">
+              <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="<?= base_url('/'); ?>">
+            <img src="images/logo.png" alt="SMPN 1 Wonorejo" width="40" height="40" style="border-radius: 100px;">
+            <!-- Kalau masih tidak bisa, src untuk gambarnya bisa pakai link yg ini https://i.imgur.com/EOvVWjz.png -->
+            <span class="navbar-brand flex-grow-1">SMPN 1 WONOREJO</span>
+        </a>
       </div>
+
       </div>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -23,10 +26,10 @@
 
   <!-- Bagian ini nanti pakai looping dari database, jadi harus modif Back-End lagi -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 40px">
-    <div class="container container-fluid d-flex flex-column flex-md-row justify-content-between">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- <div class="container container-fluid d-flex flex-column flex-md-row justify-content-between"> -->
+      <div class="navbar-collapse collapse flex-grow-1 justify-content-center w-100" id="navbarSupportedContent">
       
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-2">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-2 w-100 justify-content-center">
         
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">Berita</a>
@@ -90,7 +93,7 @@
 
         </ul>
       </div>
-    </div>
+    <!-- </div> -->
   </nav>
 </header>
 

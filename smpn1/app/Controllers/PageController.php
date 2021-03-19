@@ -16,7 +16,7 @@ class PageController extends BaseController
 
     public function profile_pendidik()
     {
-        return view('profile/pendidik');
+        return view('profile/teachers');
     }
 
 }

@@ -2,7 +2,7 @@
 <?= $this->extend('layout/template') ?>
 <?= $this->section('content') ?>
 
-<div class="my-3 py-5">
+<div class="my-3 py-5 mt-5 pt-5">
     <div class="container text-center">
         <h1 style="font-family: 'Roboto', sans-serif;" class="mb-3">Tenaga Pendidik</h1>
     </div>

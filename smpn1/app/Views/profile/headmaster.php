@@ -5,7 +5,7 @@
 <div class="container">
     <!-- <h1>Ini halaman profile kepala sekolah</h1> -->
     <div class="row">
-        <div class="col-md-10 mx-auto">
+        <div class="col-md-10 mx-auto mt-5 pt-5">
             <!-- <img alt="foto kepala sekolah" class="bd-placeholder-img img-fluid" width="500" height="500"> -->
             <h3 class="text-center">Nama Kepala Sekolah</h3>
             <h4 class="text-center">NIP</h4>

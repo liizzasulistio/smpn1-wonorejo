@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
 
 <!-- header -->
-<div class="pt-5 pb-3">
+<div class="mt-5 pt-5 pb-3">
     <div class="container text-center">
         <h1 style="font-family: 'Roboto', sans-serif;" class="mb-3">Ekstrakulikuler</h1>
         <h3 style="font-family: 'Playfair Display', serif;">[ detail ekstrakulikuler ]</h3>

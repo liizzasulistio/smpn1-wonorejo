@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
 
 <!-- header -->
-<div class="py-5">
+<div class="py-5 mt-5">
     <div class="container container-fluid">
         <h1 style="font-family: 'Playfair Display', serif;" class="mb-3 text-center">Judul Artikel</h1>
     </div>

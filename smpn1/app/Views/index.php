@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
 
 <!-- corousel -->
-<img src="images/img_full.png" class="img-fluid" alt="SMPN 1 Wonorejo" style="width: 100%; height:650px; object-fit: fill; margin:0;">
+<img src="images/img_full.png" class="img-fluid" alt="SMPN 1 Wonorejo" style="width: 100%; height:600px; object-fit: fill; margin:0;">
 <div style="width: 100%; height: 60px; background-color:#cfaf87;">
     <p class="pt-3 text-center">Unggul Dalam Prestasi, Beriman dan Bertakwa, Berkarakter dan Berbudaya Lingkungan</p>
 </div>
@@ -120,7 +120,7 @@
         </div>
     </div>
 
-    <a href="#" class="float-md-end py-3 fs-4">Artikel <img src="icons/arrow-right.svg" /></a>
+    <!-- <a href="#" class="float-md-end py-3 fs-4">Artikel <img src="icons/arrow-right.svg" /></a> -->
 </div>
 
 

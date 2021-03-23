@@ -19,4 +19,24 @@ class PageController extends BaseController
         return view('profile/teachers');
     }
 
+    public function profile_tu()
+    {
+        return view('profile/TU');
+    }
+
+    public function history()
+    {
+        return view('profile/history');
+    }
+
+    public function visi()
+    {
+        return view('profile/visi');
+    }
+
+    public function misi()
+    {
+        return view('profile/misi');
+    }
+
 }

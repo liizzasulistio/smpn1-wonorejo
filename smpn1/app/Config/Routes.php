@@ -36,6 +36,10 @@ $routes->get('/', 'PageController::index');
 // menu Profile
 $routes->get('/profile', 'PageController::profile');		//kepala sekolah
 $routes->get('/profile_guru', 'PageController::profile_pendidik');		//pendidik
+$routes->get('/profile_kependidikan', 'PageController::profile_tu');		//pendidik
+$routes->get('/sejarah', 'PageController::history');		//pendidik
+$routes->get('/visi', 'PageController::visi');		//pendidik
+$routes->get('/misi', 'PageController::misi');		//pendimik
 
 // menu Kegiatan adiwiyata
 $routes->get('/adiwiyata', 'AdiwiyataController::index');

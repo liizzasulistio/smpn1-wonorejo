@@ -6,10 +6,14 @@
     <!-- <h1>Ini halaman profile kepala sekolah</h1> -->
     <div class="row">
         <div class="col-md-10 mx-auto">
+
+            <div class="text-center mb-4">
+                <h1 style="font-family: 'Roboto', sans-serif; margin-top:130px;" class="">Sejarah</h1>
+            </div>
             <!-- <img alt="foto kepala sekolah" class="bd-placeholder-img img-fluid" width="500" height="500"> -->
-            <img src="images/img_full.png" class="img-fluid" alt="SMPN 1 Wonorejo" style="width: 100%; height:300px; object-fit: fill; margin:0; margin-top:130px;">
+            <img src="images/img_full.png" class="img-fluid mb-4" alt="SMPN 1 Wonorejo" style="width: 100%; height:300px; object-fit: fill; margin:0;">
             
-            <h3 class="text-center mt-4">Sejarah</h3>
+            <!-- <h3 class="text-center mt-4">Sejarah</h3> -->
             <!-- <h4 class="text-center">NIP</h4> -->
             <P class="d-flex justify-content-between my-3">
                 SMP Negeri 1 Wonorejo Kabupaten Pasuruan adalah lembaga pendidikan formal yang berada dibawah pembinaan Dinas Pendidikan Kabupaten Pasuruan.

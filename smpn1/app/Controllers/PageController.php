@@ -29,14 +29,14 @@ class PageController extends BaseController
         return view('profile/history');
     }
 
-    public function visi()
+    public function prestasi()
     {
-        return view('profile/visi');
+        return view('profile/prestasi');
     }
 
-    public function misi()
+    public function visi_misi()
     {
-        return view('profile/misi');
+        return view('profile/visi_misi');
     }
 
 }

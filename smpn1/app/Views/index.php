@@ -3,7 +3,8 @@
 <?= $this->section('content') ?>
 
 <!-- corousel -->
-<img src="images/img_full.png" class="img-fluid" alt="SMPN 1 Wonorejo" style="width: 100%; height:600px; object-fit: fill; margin:0;">
+<img src="images/img_full.png" class="img-fluid" alt="SMPN 1 Wonorejo" style="width: 100%; height:650px; object-fit: fill; margin:0;">
+
 <div style="width: 100%; height: 60px; background-color:#cfaf87;">
     <p class="pt-3 text-center">Unggul Dalam Prestasi, Beriman dan Bertakwa, Berkarakter dan Berbudaya Lingkungan</p>
 </div>
@@ -61,7 +62,7 @@
 
 <hr>
 
-<div class="text-center container">
+<div class="text-center container container-fluid">
     <div class="row py-md-5 py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
             <h2>TULISAN TERBARU</h2>
@@ -70,7 +71,7 @@
 </div>
 
 <div class="container pb-5">
-    <div class="row cols-1 cols-sm-2 cols-md-3">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
             <div class="card shadow-sm">
                 <img src="images/img_full.png" width="100%" height="225" class="bd-placeholder-img card-img-top">

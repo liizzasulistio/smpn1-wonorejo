@@ -34,12 +34,14 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'PageController::index');
 
 // menu Profile
-$routes->get('/profile', 'PageController::profile');		//kepala sekolah
-$routes->get('/profile_guru', 'PageController::profile_pendidik');		//pendidik
+$routes->get('/profile', 'PageController::profile');		//kepala sekolah		//pendidik
 $routes->get('/profile_kependidikan', 'PageController::profile_tu');		//pendidik
 $routes->get('/sejarah', 'PageController::history');		//pendidik
-$routes->get('/visi', 'PageController::visi');		//pendidik
-$routes->get('/misi', 'PageController::misi');		//pendimik
+$routes->get('/visi&misi', 'PageController::visi_misi');		//pendidik
+$routes->get('/prestasi', 'PageController::prestasi');		//pendidik
+
+// menu Akademik
+$routes->get('/rules', 'AkademikController::rules');
 
 // menu Kegiatan adiwiyata
 $routes->get('/adiwiyata', 'AdiwiyataController::index');
@@ -52,6 +54,10 @@ $routes->get('/detail_ekstrakulikuler', 'ExtraController::detail');			//detail a
 // menu Kegiatan kreasi dan inovasi
 $routes->get('/kreasi', 'CreationController::index');
 $routes->get('/detail_kreasi', 'CreationController::detail');			//detail artikel
+
+// menu Profile Guru
+$routes->get('/guru', 'TeachersController::index');
+$routes->get('/detail_guru', 'TeachersController::detail');
 
 /*
  * --------------------------------------------------------------------

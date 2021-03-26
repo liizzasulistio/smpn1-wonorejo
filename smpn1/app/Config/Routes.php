@@ -34,10 +34,10 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'PageController::index');
 
 // menu Profile
-$routes->get('/profile', 'PageController::profile');		//kepala sekolah		//pendidik
-$routes->get('/profile_kependidikan', 'PageController::profile_tu');		//pendidik
+$routes->get('/kepala-sekolah', 'PageController::profile');		//kepala sekolah		
+$routes->get('/tenaga-kependidikan', 'PageController::profile_tu');		//pendidik
 $routes->get('/sejarah', 'PageController::history');		//pendidik
-$routes->get('/visi&misi', 'PageController::visi_misi');		//pendidik
+$routes->get('/visi-dan-misi', 'PageController::visi_misi');		//pendidik
 $routes->get('/prestasi', 'PageController::prestasi');		//pendidik
 
 // menu Akademik
@@ -45,19 +45,19 @@ $routes->get('/rules', 'AkademikController::rules');
 
 // menu Kegiatan adiwiyata
 $routes->get('/adiwiyata', 'AdiwiyataController::index');
-$routes->get('/detail_adiwiyata', 'AdiwiyataController::detail');			//detail artikel
+$routes->get('/detail-adiwiyata', 'AdiwiyataController::detail');			//detail artikel
 
 // menu Kegiatan ekstrakulikuler
 $routes->get('/ekstrakulikuler', 'ExtraController::index');
-$routes->get('/detail_ekstrakulikuler', 'ExtraController::detail');			//detail artikel
+$routes->get('/detail-ekstrakulikuler', 'ExtraController::detail');			//detail artikel
 
 // menu Kegiatan kreasi dan inovasi
-$routes->get('/kreasi', 'CreationController::index');
-$routes->get('/detail_kreasi', 'CreationController::detail');			//detail artikel
+$routes->get('/kreasi-dan-inovasi', 'CreationController::index');
+$routes->get('/detail-kreasi-dan-inovasi', 'CreationController::detail');			//detail artikel
 
 // menu Profile Guru
-$routes->get('/guru', 'TeachersController::index');
-$routes->get('/detail_guru', 'TeachersController::detail');
+$routes->get('/tenaga-pendidik', 'TeachersController::index');
+$routes->get('/detail-tenaga-pendidik', 'TeachersController::detail');
 
 /*
  * --------------------------------------------------------------------

@@ -33,13 +33,13 @@
                     Profil
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Sejarah</a></li>
-                    <li><a class="dropdown-item" href="#">Visi & Misi</a></li>
+                    <li><a class="dropdown-item" href="<?= base_url('/sejarah'); ?>">Sejarah</a></li>
+                    <li><a class="dropdown-item" href="<?= base_url('/visi-dan-misi'); ?>">Visi & Misi</a></li>
                     <li><a class="dropdown-item" href="#">Fasilitas</a></li>
-                    <li><a class="dropdown-item" href="#">Kepala Sekolah</a></li>
-                    <li><a class="dropdown-item" href="#">Tenaga Pendidik</a></li>
-                    <li><a class="dropdown-item" href="#">Tenaga Kependidikan</a></li>
-                    <li><a class="dropdown-item" href="#">Prestasi</a></li>
+                    <li><a class="dropdown-item" href="<?= base_url('/kepala-sekolah'); ?>">Kepala Sekolah</a></li>
+                    <li><a class="dropdown-item" href="<?= base_url('/tenaga-pendidik'); ?>">Tenaga Pendidik</a></li>
+                    <li><a class="dropdown-item" href="<?= base_url('/tenaga-kependidikan'); ?>">Tenaga Kependidikan</a></li>
+                    <li><a class="dropdown-item" href="<?= base_url('/prestasi'); ?>">Prestasi</a></li>
                   </ul>
                 </li>
 
@@ -60,9 +60,9 @@
                     Kegiatan
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Adiwiyata</a></li>
-                    <li><a class="dropdown-item" href="#">Kreasi & Inovasi</a></li>
-                    <li><a class="dropdown-item" href="#">Ekstrakulikuler</a></li>
+                    <li><a class="dropdown-item" href="<?= base_url('/adiwiyata'); ?>">Adiwiyata</a></li>
+                    <li><a class="dropdown-item" href="<?= base_url('/kreasi-dan-inovasi'); ?>">Kreasi & Inovasi</a></li>
+                    <li><a class="dropdown-item" href="<?= base_url('/ekstrakulikuler'); ?>">Ekstrakulikuler</a></li>
                   </ul>
                 </li>
 

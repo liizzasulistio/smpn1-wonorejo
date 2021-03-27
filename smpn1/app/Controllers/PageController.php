@@ -34,9 +34,19 @@ class PageController extends BaseController
         return view('profile/prestasi');
     }
 
+    public function fasilitas()
+    {
+        return view('profile/fasilitas');
+    }
+    
     public function visi_misi()
     {
         return view('profile/visi_misi');
+    }
+
+    public function seleksippdb()
+    {
+        return view('ppdb/hasil-seleksi');
     }
 
 }

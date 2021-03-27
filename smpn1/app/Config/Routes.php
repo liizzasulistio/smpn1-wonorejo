@@ -39,9 +39,12 @@ $routes->get('/tenaga-kependidikan', 'PageController::profile_tu');		//pendidik
 $routes->get('/sejarah', 'PageController::history');		//pendidik
 $routes->get('/visi-dan-misi', 'PageController::visi_misi');		//pendidik
 $routes->get('/prestasi', 'PageController::prestasi');		//pendidik
+$routes->get('/fasilitas', 'PageController::fasilitas');		//pendidik
 
 // menu Akademik
-$routes->get('/rules', 'AkademikController::rules');
+$routes->get('/peraturan-akademik', 'AkademikController::rules');
+$routes->get('/daftar-siswa', 'AkademikController::students');
+$routes->get('/tata-tertib', 'AkademikController::tatatertib');
 
 // menu Kegiatan adiwiyata
 $routes->get('/adiwiyata', 'AdiwiyataController::index');
@@ -58,6 +61,9 @@ $routes->get('/detail-kreasi-dan-inovasi', 'CreationController::detail');			//de
 // menu Profile Guru
 $routes->get('/tenaga-pendidik', 'TeachersController::index');
 $routes->get('/detail-tenaga-pendidik', 'TeachersController::detail');
+
+// ppdb hasil seleksi
+$routes->get('/hasil-seleksi', 'PageController::seleksippdb');
 
 /*
  * --------------------------------------------------------------------

@@ -3,10 +3,10 @@
 <?= $this->section('content') ?>
 
 <!-- header -->
-<div class="mt-5 pt-5 pb-3">
+<div class="pb-3">
     <div class="container text-center">
-        <h1 style="font-family: 'Roboto', sans-serif;" class="mb-3">Kreasi dan Inovasi</h1>
-        <h3 style="font-family: 'Playfair Display', serif;">keterangan</h3>
+        <h1 style="font-family: 'Roboto', sans-serif; margin-top: 130px;" class="mb-3"> Kreasi dan Inovasi </h1>
+        <h3 style="font-family: 'Playfair Display', serif;">portofolio kegiatan kreasi dan inovasi</h3>
     </div>
 </div>
 

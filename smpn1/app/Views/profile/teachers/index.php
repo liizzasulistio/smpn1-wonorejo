@@ -5,7 +5,8 @@
 <div class="container container-fluid">
 
     <div class="text-center mb-5">
-        <h1 style="font-family: 'Roboto', sans-serif; margin-top:130px;" class="">Tenaga Pendidik</h1>
+        <h2 style="font-family: 'Roboto', sans-serif; margin-top:130px;" class=""> TENAGA PENDIDIK </h2>
+        <hr style="width: 10%; margin:auto; height:3px; color:#cd8d7b;">
     </div>
 
     <div class="row text-center pt-3">

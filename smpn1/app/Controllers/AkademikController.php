@@ -9,6 +9,16 @@ class AkademikController extends BaseController
         return view('akademik/akademikRules');
     }
 
+    public function students()
+    {
+        return view('akademik/daftar-siswa');
+    }
+
+    public function tatatertib()
+    {
+        return view('akademik/tata-tertib');
+    }
+
     // public function detail()
     // {
     //     return view('activity/extracurricular/detail');

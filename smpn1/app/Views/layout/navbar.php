@@ -35,7 +35,7 @@
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="<?= base_url('/sejarah'); ?>">Sejarah</a></li>
                     <li><a class="dropdown-item" href="<?= base_url('/visi-dan-misi'); ?>">Visi & Misi</a></li>
-                    <li><a class="dropdown-item" href="#">Fasilitas</a></li>
+                    <li><a class="dropdown-item" href="<?= base_url('/fasilitas'); ?>">Fasilitas</a></li>
                     <li><a class="dropdown-item" href="<?= base_url('/kepala-sekolah'); ?>">Kepala Sekolah</a></li>
                     <li><a class="dropdown-item" href="<?= base_url('/tenaga-pendidik'); ?>">Tenaga Pendidik</a></li>
                     <li><a class="dropdown-item" href="<?= base_url('/tenaga-kependidikan'); ?>">Tenaga Kependidikan</a></li>
@@ -48,9 +48,9 @@
                     Akademik
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Peraturan Akademik</a></li>
-                    <li><a class="dropdown-item" href="#">Tata Tertib</a></li>
-                    <li><a class="dropdown-item" href="#">Daftar Siswa</a></li>
+                    <li><a class="dropdown-item" href="<?= base_url('/peraturan-akademik'); ?>">Peraturan Akademik</a></li>
+                    <li><a class="dropdown-item" href="<?= base_url('/tata-tertib'); ?>">Tata Tertib</a></li>
+                    <li><a class="dropdown-item" href="<?= base_url('/daftar-siswa'); ?>">Daftar Siswa</a></li>
                     <li><a class="dropdown-item" href="#">Kalender Akademik</a></li>
                   </ul>
                 </li>
@@ -76,7 +76,7 @@
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#">Formulir</a></li>
-                    <li><a class="dropdown-item" href="#">Hasil Seleksi</a></li>
+                    <li><a class="dropdown-item" href="<?= base_url('/hasil-seleksi'); ?>">Hasil Seleksi</a></li>
                   </ul>
                 </li>
 

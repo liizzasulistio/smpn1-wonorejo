@@ -3,7 +3,8 @@
 
 <div class="mb-5" style="margin-top:130px;">
     <div class="container text-center">
-        <h1 style="font-family: 'Roboto', sans-serif;">Prestasi</h1>
+        <h2 style="font-family: 'Roboto', sans-serif;"> PRESTASI </h2>
+        <hr style="width: 10%; margin:auto; height:3px; color:#cd8d7b;">
     </div>
 </div>
 

@@ -3,17 +3,13 @@
 <?= $this->section('content') ?>
 
 <!-- header -->
-<div class="py-5 mt-5">
+<div class="mb-5">
     <div class="container container-fluid">
-        <h1 style="font-family: 'Playfair Display', serif;" class="mb-3 text-center">Judul Artikel</h1>
+        <h1 style="font-family: 'Playfair Display', serif; margin-top: 130px;" class="text-center">Judul Artikel</h1>
     </div>
 </div>
 
-<div class="p-md-5 mb-4 text-white bg-dark">
-    <div class="col-md-6">
-        <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
-    </div>
-</div>
+<img src="images/img_full.png" class="img-fluid" alt="SMPN 1 Wonorejo" style="width: 100%; height:400px; object-fit: fill; margin:0; margin-bottom: 50px;">
 
 <div class="container container-fluid">
     <!-- <h1>Ini halaman profile kepala sekolah</h1> -->

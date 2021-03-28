@@ -7,7 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- CSS baru untuk overwrite CSS dari bootstrap -->
-        <link rel="stylesheet" href="/css/styles.css">
+        
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url('css/styles.css'); ?>">
 
         <!-- Deklarasi Font -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -26,18 +27,18 @@
         <title>Judul Halaman</title> <!-- Nanti diganti berdasarkan dengan halaman yg sedang dibuka -->
 
         <style>
-        footer {
-            background: #084177;
-            padding: 20px;
-        }
+
+            footer {
+                background: #084177;
+                padding: 20px;
+            }
+
         </style>
     </head>
 
     <!-- Body -->
     <body>
-
-  
-
+        
     <!-- Digunakan untuk render navbar dan konten dari website nantinya -->
     <?= $this->include('layout/navbar'); ?>
     <?= $this->renderSection('content'); ?>
@@ -56,22 +57,22 @@
                     <ul class="list-unstyled text-small">
                         <h6><b>Hubungi Kami</b></h6>
                         <li>Jalan Raya Sambisirah No. 12</li>
-                        <li><a class="text-decoration-none" href="#">smpnwonorejokabpasuruan@gmail.com</a></li>
-                        <li><a class="text-decoration-none" href="#">0343-4505959</a></li>
+                        <li><a class="text-decoration-none" href="#" style="color:white; text-decoration: none;">smpnwonorejokabpasuruan@gmail.com</a></li>
+                        <li><a class="text-decoration-none" href="#" style="color:white; text-decoration: none;">0343-4505959</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <h6><b>Temukan Kami</b></h6>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-decoration-none" href="#">social media</a></li>
-                        <li><a class="text-decoration-none" href="#">social media</a></li>
-                        <li><a class="text-decoration-none" href="#">social media</a></li>
-                        <li><a class="text-decoration-none" href="#">social media</a></li>
+                        <li><a class="text-decoration-none" href="#" style="color:white; text-decoration: none;">social media</a></li>
+                        <li><a class="text-decoration-none" href="#" style="color:white; text-decoration: none;">social media</a></li>
+                        <li><a class="text-decoration-none" href="#" style="color:white; text-decoration: none;">social media</a></li>
+                        <li><a class="text-decoration-none" href="#" style="color:white; text-decoration: none;">social media</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <h6><b>SIPENSIL</b></h6>
-                    <p><a class="text-decoration-none" href="#">gambar</a></p>
+                    <p><a class="text-decoration-none" href="#" style="color:white; text-decoration: none;">gambar</a></p>
                 </div>
             </div>
 
@@ -79,7 +80,7 @@
                 <div class="col mt-5">
                     <hr>
                     <p class="float-end">
-                        <a class="link-secondary" href="#">Back to top</a>
+                        <a class="link-secondary" href="#" style="color:white; text-decoration: none;">Back to top</a>
                     </p>
                     <p>Copyright © 2020 - 2021 SMPN 1 WONOREJO All rights reserved.</p>
                 </div>

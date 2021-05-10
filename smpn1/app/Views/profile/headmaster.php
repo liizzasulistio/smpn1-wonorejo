@@ -1,5 +1,6 @@
 <!-- Template -->
-<?= $this->extend('layout/template') ?>
+
+<?= $this->extend('layout/template_body') ?>
 <?= $this->section('content') ?>
 
 <div class="container">
@@ -7,7 +8,9 @@
     <div class="row">
         <div class="col-md-10 mx-auto">
             <!-- <img alt="foto kepala sekolah" class="bd-placeholder-img img-fluid" width="500" height="500"> -->
-            <img src="images/img_full.png" class="img-fluid" alt="SMPN 1 Wonorejo" style="width: 100%; height:300px; object-fit: fill; margin:0; margin-top:130px;">
+            <div class="text-center">
+                <img src="images/img_full.png" class="img-fluid mt-5" alt="SMPN 1 Wonorejo" style="width: 300px; height: 300px; object-fit: fill;">
+            </div>
             
             <h3 class="text-center mt-4">Nama Kepala Sekolah</h3>
             <h4 class="text-center">NIP</h4>

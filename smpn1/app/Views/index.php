@@ -117,7 +117,6 @@
             </div>
         </div>
     </div>
-
     <!-- <a href="#" class="float-md-end py-3 fs-4">Artikel <img src="icons/arrow-right.svg" /></a> -->
 </div>
 

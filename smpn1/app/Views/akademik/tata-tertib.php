@@ -1,8 +1,9 @@
 <!-- Template -->
-<?= $this->extend('layout/template') ?>
+
+<?= $this->extend('layout/template_body') ?>
 <?= $this->section('content') ?>
 
-<img src="images/img_full.png" class="img-fluid" alt="SMPN 1 Wonorejo" style="width: 100%; height:400px; object-fit: fill; margin:0; margin-top:80px;">
+<!-- <img src="images/img_full.png" class="img-fluid" alt="SMPN 1 Wonorejo" style="width: 100%; height:400px; object-fit: fill; margin:0; margin-top:80px;"> -->
 
 <div class="container">
     <!-- <h1>Ini halaman profile kepala sekolah</h1> -->

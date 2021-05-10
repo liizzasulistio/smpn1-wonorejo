@@ -36,7 +36,7 @@
                     <li><a class="dropdown-item" href="<?= base_url('/sejarah'); ?>">Sejarah</a></li>
                     <li><a class="dropdown-item" href="<?= base_url('/visi-dan-misi'); ?>">Visi & Misi</a></li>
                     <li><a class="dropdown-item" href="<?= base_url('/fasilitas'); ?>">Fasilitas</a></li>
-                    <li><a class="dropdown-item" href="<?= base_url('/kepala-sekolah'); ?>">Kepala Sekolah</a></li>
+                    <li><a class="dropdown-item" href="<?= base_url('/kepala-sekolah'); ?>">Sambutan Kepala Sekolah</a></li>
                     <li><a class="dropdown-item" href="<?= base_url('/tenaga-pendidik'); ?>">Tenaga Pendidik</a></li>
                     <li><a class="dropdown-item" href="<?= base_url('/tenaga-kependidikan'); ?>">Tenaga Kependidikan</a></li>
                     <li><a class="dropdown-item" href="<?= base_url('/prestasi'); ?>">Prestasi</a></li>

@@ -1,5 +1,6 @@
 <!-- Template -->
-<?= $this->extend('layout/template') ?>
+
+<?= $this->extend('layout/template_body') ?>
 <?= $this->section('content') ?>
 
 <div class="container">
@@ -8,7 +9,7 @@
         <div class="col-md-10 mx-auto">
 
             <div class="text-center mb-4">
-                <h1 style="font-family: 'Roboto', sans-serif; margin-top:130px;" class=""> VISI DAN MISI </h1>
+                <h1 style="font-family: 'Roboto', sans-serif;" class="mt-5"> VISI DAN MISI </h1>
                 <hr style="width: 10%; margin:auto; height:3px; color:#cd8d7b;">
             </div>
             

@@ -1,11 +1,12 @@
 <!-- Template -->
-<?= $this->extend('layout/template') ?>
+
+<?= $this->extend('layout/template_body') ?>
 <?= $this->section('content') ?>
 
 <div class="container container-fluid">
 
     <div class="text-center mb-5">
-        <h2 style="font-family: 'Roboto', sans-serif; margin-top:130px;" class=""> TENAGA KEPENDIDIKAN </h2>
+        <h2 style="font-family: 'Roboto', sans-serif;" class="mt-5"> TENAGA KEPENDIDIKAN </h2>
         <hr style="width: 10%; margin:auto; height:3px; color:#cd8d7b;">
     </div>
 

@@ -44,6 +44,8 @@ class Autoload extends AutoloadConfig
 		'Config'      => APPPATH . 'Config',
 	];
 
+	// public $config = ['http://ur_site_url.com/'];
+
 	/**
 	 * -------------------------------------------------------------------
 	 * Class Map
@@ -63,4 +65,5 @@ class Autoload extends AutoloadConfig
 	 * @var array<string, string>
 	 */
 	public $classmap = [];
+	
 }

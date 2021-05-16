@@ -3,7 +3,7 @@
 
 <header>
 
-  <nav class="navbar navbar-expand-lg navbar-expand-md navbar-toggleable-md navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-expand-md navbar-toggleable-md fixed-top">
     <div class="container-fluid">
 
       <div class="row">
@@ -11,7 +11,8 @@
           <a class="navbar-brand" href="<?= base_url('/'); ?>">
             <img src="images/logo.png" alt="SMPN 1 Wonorejo" width="40" height="40" style="border-radius: 100px;">
             <!-- Kalau masih tidak bisa, src untuk gambarnya bisa pakai link yg ini https://i.imgur.com/EOvVWjz.png -->
-            <span class="navbar-brand flex-grow-1">SMPN 1 WONOREJO</span>
+            <span class="navbar-brand flex-grow-1" style="color:white; text-decoration: none;"><b>SMPN 1 WONOREJO</b></span>
+            <!-- <br> -->
           </a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,12 +26,12 @@
             <div class="col-md-7">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Berita</a>
+                  <a class="nav-link" aria-current="page" href="#" style="color:white; text-decoration: none;"><b>Berita</b></a>
                 </li>
 
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Profil
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white; text-decoration: none;">
+                    <b>Profil</b>
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="<?= base_url('/sejarah'); ?>">Sejarah</a></li>
@@ -44,8 +45,8 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Akademik
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white; text-decoration: none;">
+                    <b>Akademik</b>
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="<?= base_url('/peraturan-akademik'); ?>">Peraturan Akademik</a></li>
@@ -56,8 +57,8 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Kegiatan
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white; text-decoration: none;">
+                    <b>Kegiatan</b>
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="<?= base_url('/adiwiyata'); ?>">Adiwiyata</a></li>
@@ -67,12 +68,12 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Galeri</a>
+                  <a class="nav-link" aria-current="page" href="#" style="color:white; text-decoration: none;"><b>Galeri</b></a>
                 </li>
 
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    PPDB
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white; text-decoration: none;">
+                    <b>PPDB</b>
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#">Formulir</a></li>
@@ -81,17 +82,17 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Alumni</a>
+                  <a class="nav-link" aria-current="page" href="#" style="color:white; text-decoration: none;"><b>Alumni</b></a>
                 </li>
               </ul>
             </div>
 
-            <div class="col-md-5">
+            <!-- <div class="col-md-5">
               <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-primary me-3" type="submit">Search</button>
               </form>
-            </div>
+            </div> -->
 
           </div>
         </div>

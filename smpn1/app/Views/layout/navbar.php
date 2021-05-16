@@ -3,7 +3,7 @@
 
 <header>
 
-  <nav class="navbar navbar-expand-lg navbar-expand-md navbar-toggleable-md fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-expand-md navbar-toggleable-md navbar-dark fixed-top">
     <div class="container-fluid">
 
       <div class="row">
@@ -20,8 +20,8 @@
           </button>
         </div>
 
-        <div class="collapse navbar-collapse ml-lg-0 ml-3" id="navbarHeader">
-          <div class="row">
+        <!-- <div class="collapse navbar-collapse ml-lg-0 ml-3" id="navbarHeader"> -->
+          <!-- <div class="row"> -->
 
             <div class="col-md-7">
               <ul class="navbar-nav">
@@ -87,16 +87,16 @@
               </ul>
             </div>
 
-            <!-- <div class="col-md-5">
+            <div class="col-md-5">
               <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary me-3" type="submit">Search</button>
+                <button class="btn btn-outline-primary" type="submit">Search</button>
               </form>
-            </div> -->
+            </div>
 
-          </div>
-        </div>
-        <!-- /div -->
+          <!-- </div> -->
+        <!-- </div> -->
+  
       </div>
     </div>
   </nav>

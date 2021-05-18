@@ -9,6 +9,22 @@ class PageController extends BaseController
         return view('index');
     }
 
+    public function index2()
+    {
+        $data = [
+            'title' => 'SMPN 1 WONOREJO',
+        ];
+        return view('index', $data);
+    }
+
+    public function dashboard()
+    {
+        $data = [
+            'title' => 'Dashboard',
+        ];
+        return view('page/dashboard', $data);
+    }
+
     public function profile()
     {
         return view('profile/headmaster');

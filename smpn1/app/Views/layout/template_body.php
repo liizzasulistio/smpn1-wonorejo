@@ -27,12 +27,22 @@
         <title>Judul Halaman</title> <!-- Nanti diganti berdasarkan dengan halaman yg sedang dibuka -->
 
         <style>
+            .top-bar {
+                background: #084177;
+            }
+
+            .menu-bar {
+                background: #084177;
+            }
+
+            .dropdown-item {
+                font-weight: bold;
+            }
 
             footer {
                 background: #084177;
                 padding: 20px;
             }
-
         </style>
     </head>
 

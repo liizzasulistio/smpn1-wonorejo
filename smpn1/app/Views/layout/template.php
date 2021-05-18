@@ -27,7 +27,11 @@
         <title>Judul Halaman</title> <!-- Nanti diganti berdasarkan dengan halaman yg sedang dibuka -->
 
         <style>
-            nav {
+            .top-bar {
+                background: #084177;
+            }
+
+            .menu-bar {
                 background: #084177;
             }
 

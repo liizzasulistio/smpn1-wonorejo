@@ -73,7 +73,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Galeri</a>
+                <a class="nav-link" href="<?= base_url('/galleri'); ?>">Galeri</a>
               </li>
 
               <li class="nav-item dropdown">

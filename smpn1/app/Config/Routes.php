@@ -69,6 +69,9 @@ $routes->get('/detail-tenaga-pendidik', 'TeachersController::detail');
 // ppdb hasil seleksi
 $routes->get('/hasil-seleksi', 'PageController::seleksippdb');
 
+// galery
+$routes->get('/galleri', 'PageController::galeri');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

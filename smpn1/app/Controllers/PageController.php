@@ -25,11 +25,17 @@ class PageController extends BaseController
         return view('page/dashboard', $data);
     }
 
+    public function galeri()
+    {
+        return view('gallery/index');
+    }
+
     public function profile()
     {
         return view('profile/headmaster');
     }
 
+    // harusnya ini ngga kepake sih
     public function profile_pendidik()
     {
         return view('profile/teachers');

@@ -48,12 +48,12 @@
 
     <!-- Body -->
     <body>
-    
-    <img src="images/img_full.png" class="img-fluid" alt="SMPN 1 Wonorejo" style="width: 100%; height:400px; object-fit: fill; margin:0; margin-top:80px;">
         
     <!-- Digunakan untuk render navbar dan konten dari website nantinya -->
     <?= $this->include('layout/navbar'); ?>
+    <img src="images/img_full.png" class="img-fluid" alt="SMPN 1 Wonorejo" style="width: 100%; height:400px; object-fit: fill;">
     <?= $this->renderSection('content'); ?>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
     <footer class="pt-5 mt-5 text-white">

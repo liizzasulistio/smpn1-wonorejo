@@ -40,15 +40,19 @@ $routes->get('/dashboard', 'PageController::dashboard');
 // menu Profile
 $routes->get('/kepala-sekolah', 'PageController::profile');		//kepala sekolah		
 $routes->get('/tenaga-kependidikan', 'PageController::profile_tu');		//pendidik
-$routes->get('/sejarah', 'PageController::history');		//pendidik
-$routes->get('/visi-dan-misi', 'PageController::visi_misi');		//pendidik
-$routes->get('/prestasi', 'PageController::prestasi');		//pendidik
-$routes->get('/fasilitas', 'PageController::fasilitas');		//pendidik
+$routes->get('/sejarah', 'PageController::history');		
+$routes->get('/visi-dan-misi', 'PageController::visi_misi');
+$routes->get('/fasilitas', 'PageController::fasilitas');
 
+// prestasi
+$routes->get('/prestasi', 'PageController::prestasi');		
+$routes->get('/detail-prestasi', 'PageController::detail_prestasi');		
+		
 // menu Akademik
 $routes->get('/peraturan-akademik', 'AkademikController::rules');
 $routes->get('/daftar-siswa', 'AkademikController::students');
 $routes->get('/tata-tertib', 'AkademikController::tatatertib');
+$routes->get('/kalender-akademik', 'AkademikController::kalender');
 
 // menu Kegiatan adiwiyata
 $routes->get('/adiwiyata', 'AdiwiyataController::index');

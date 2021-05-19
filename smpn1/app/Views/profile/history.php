@@ -11,7 +11,7 @@
         <div class="col-md-10 mx-auto">
 
             <div class="text-center mb-4">
-                <h2 style="font-family: 'Roboto', sans-serif;" class="mt-5"> SEJARAH SEKOLAH SMPN 1 WONOREJO </h2>
+                <h2 style="font-family: 'Roboto', sans-serif;" class="mt-5"><b> SEJARAH SEKOLAH SMPN 1 WONOREJO </b></h2>
                 <hr style="width: 10%; margin:auto; height:3px; color:#cd8d7b;">
             </div>
             

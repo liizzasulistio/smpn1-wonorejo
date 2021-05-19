@@ -51,10 +51,17 @@ class PageController extends BaseController
         return view('profile/history');
     }
 
+    // prestasi
     public function prestasi()
     {
-        return view('profile/prestasi');
+        return view('profile/prestasi/index');
     }
+
+    public function detail_prestasi()
+    {
+        return view('profile/prestasi/detail');
+    }
+    
 
     public function fasilitas()
     {

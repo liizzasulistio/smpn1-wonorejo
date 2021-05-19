@@ -11,7 +11,7 @@
             <a class="navbar-brand" href="<?= base_url('/'); ?>">
               <img src="images/logo.png" alt="SMPN 1 Wonorejo" width="50" height="50" style="border-radius: 100px;">
               <!-- Kalau masih tidak bisa, src untuk gambarnya bisa pakai link yg ini https://i.imgur.com/EOvVWjz.png -->
-              <span class="navbar-brand flex-grow-1">SMPN 1 WONOREJO</span>
+              <span class="navbar-brand flex-grow-1" style="color:white; text-decoration: none;"><b> SMPN 1 WONOREJO </b></span>
             </a>
           </div>
         </div>
@@ -31,11 +31,11 @@
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Berita</a>
+                <a class="nav-link" aria-current="page" href="#"  style="color:white; text-decoration: none;">Berita</a>
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color:white; text-decoration: none;">
                   Profil
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -50,19 +50,19 @@
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color:white; text-decoration: none;">
                   Akademik
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="<?= base_url('/peraturan-akademik'); ?>">Peraturan Akademik</a></li>
                   <li><a class="dropdown-item" href="<?= base_url('/tata-tertib'); ?>">Tata Tertib</a></li>
                   <li><a class="dropdown-item" href="<?= base_url('/daftar-siswa'); ?>">Daftar Siswa</a></li>
-                  <li><a class="dropdown-item" href="#">Kalender Akademik</a></li>
+                  <li><a class="dropdown-item" href="<?= base_url('/kalender-akademik'); ?>">Kalender Akademik</a></li>
                 </ul>
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color:white; text-decoration: none;">
                   Kegiatan
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -73,21 +73,21 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="<?= base_url('/galleri'); ?>">Galeri</a>
+                <a class="nav-link" style="color:white; text-decoration: none;" href="<?= base_url('/galleri'); ?>">Galeri</a>
               </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color:white; text-decoration: none;">
                   PPDB
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Formulir</a></li>
                   <li><a class="dropdown-item" href="<?= base_url('/hasil-seleksi'); ?>">Hasil Seleksi</a></li>
                 </ul>
-              </li>
+              </li> -->
 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Alumni</a>
+                <a class="nav-link" style="color:white; text-decoration: none;" aria-current="page" href="#">Alumni</a>
               </li>
             </ul>
             <form class="d-flex">

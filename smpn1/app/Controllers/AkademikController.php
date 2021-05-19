@@ -19,6 +19,11 @@ class AkademikController extends BaseController
         return view('akademik/tata-tertib');
     }
 
+    public function kalender()
+    {
+        return view('akademik/kalender-akademik');
+    }
+
     // public function detail()
     // {
     //     return view('activity/extracurricular/detail');

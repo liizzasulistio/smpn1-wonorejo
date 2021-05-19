@@ -5,7 +5,7 @@
 <!-- header -->
 <div class="pb-3">
     <div class="container text-center">
-        <h1 style="font-family: 'Roboto', sans-serif;" class="mb-3">Adiwiyata</h1>
+        <h1 style="font-family: 'Roboto', sans-serif; margin-top: 40px;" class="mb-3"><b> Adiwiyata </b></h1>
         <h3 style="font-family: 'Playfair Display', serif;">portofolio kegiatan adiwiyata</h3>
     </div>
 </div>

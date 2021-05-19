@@ -8,7 +8,7 @@
         <div class="col-md-10 mx-auto">
             <!-- <img alt="foto kepala sekolah" class="bd-placeholder-img img-fluid" width="500" height="500"> -->
             <!-- <img src="images/img_full.png" class="img-fluid" alt="SMPN 1 Wonorejo" style="width: 100%; height:300px; object-fit: fill; margin:0; margin-top:130px;"> -->
-            <img src="images/img_full.png" style="margin:0; margin-top:130px;"  width="140" height="140" class="bd-placeholder-img rounded-circle">            
+            <img src="images/img_full.png" class="mx-auto d-block" style="margin-top:50px; "  width="140" height="140" class="bd-placeholder-img rounded-circle">            
             <h3 class="text-center mt-4">Nama Tenaga Pendidik</h3>
             <h4 class="text-center">Mata Pelajaran</h4>
             <P class="d-flex justify-content-between my-3">
@@ -21,7 +21,7 @@
         </div>
     </div>
 </div>
-
+<!-- 
 <hr>
 
 <div class="my-5">
@@ -31,7 +31,6 @@
 </div>
 
 <div class="container container-fluid">
-    <!-- news cards -->
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
             <div class="card shadow-sm">
@@ -51,9 +50,8 @@
                 </div>
             </div>
         </div>
-    
     </div>
-</div>
+</div> -->
 
 
 <?= $this->endSection() ?>

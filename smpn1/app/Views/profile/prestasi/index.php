@@ -4,7 +4,7 @@
 
 <div class="mb-5 mt-5">
     <div class="container text-center">
-        <h2 style="font-family: 'Roboto', sans-serif;"> PRESTASI </h2>
+        <h2 style="font-family: 'Roboto', sans-serif;"><b> PRESTASI </b></h2>
         <hr style="width: 10%; margin:auto; height:3px; color:#cd8d7b;">
     </div>
 </div>
@@ -20,7 +20,7 @@
                 </svg>
 
                 <div class="card-body">
-                    <h5 class="card-title"><a class="stretched-link" href="<?= base_url('/'); ?>" style="color:black; text-decoration: none;"> Card title </a></h5>
+                    <h5 class="card-title"><a class="stretched-link" href="<?= base_url('/detail-prestasi'); ?>" style="color:black; text-decoration: none;"> Title card </a></h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <small class="text-muted">oleh Administrator</small>

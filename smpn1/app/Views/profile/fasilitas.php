@@ -4,7 +4,7 @@
 
 <div class="mb-5 mt-5">
     <div class="container text-center">
-        <h2 style="font-family: 'Roboto', sans-serif;"> FASILITAS SEKOLAH </h2>
+        <h2 style="font-family: 'Roboto', sans-serif;"><b> FASILITAS SEKOLAH </b></h2>
         <hr style="width: 10%; margin:auto; height:3px; color:#cd8d7b;">
     </div>
 </div>

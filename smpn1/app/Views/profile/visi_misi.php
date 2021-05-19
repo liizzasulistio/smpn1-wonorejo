@@ -9,11 +9,11 @@
         <div class="col-md-10 mx-auto">
 
             <div class="text-center mb-4">
-                <h1 style="font-family: 'Roboto', sans-serif;" class="mt-5"> VISI DAN MISI </h1>
+                <h1 style="font-family: 'Roboto', sans-serif;" class="mt-5"><b> VISI DAN MISI </b></h1>
                 <hr style="width: 10%; margin:auto; height:3px; color:#cd8d7b;">
             </div>
             
-            <h4 class="text-center mt-4">VISI</h4>
+            <h4 class="mt-4"><b> VISI </b></h4>
             <!-- <h4 class="text-center">NIP</h4> -->
             <P class="d-flex justify-content-between my-3">
                 SMP Negeri 1 Wonorejo Kabupaten Pasuruan adalah lembaga pendidikan formal yang berada dibawah pembinaan Dinas Pendidikan Kabupaten Pasuruan.
@@ -23,7 +23,7 @@
                 diantarannya Pondok Pesantren Terpadu Al-Yasini Wonorejo, Pondok Pesantern Sidogiri Kraton, MTs Negeri Wonorejo, MTs Al-Yasin dan lain-lain.
             </P>
 
-            <h4 class="text-center mt-5">MISI</h4>
+            <h4 class="mt-5"><b> MISI </b></h4>
             <!-- <h4 class="text-center">NIP</h4> -->
             <P class="d-flex justify-content-between my-3">
                 SMP Negeri 1 Wonorejo Kabupaten Pasuruan adalah lembaga pendidikan formal yang berada dibawah pembinaan Dinas Pendidikan Kabupaten Pasuruan.
@@ -42,7 +42,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 mx-auto">
-            <h4 class="">TUJUAN SEKOLAH</h4>
+            <h4 class=""><b> TUJUAN SEKOLAH </b></h4>
             <P class="d-flex justify-content-between my-3">
                 SMP Negeri 1 Wonorejo Kabupaten Pasuruan adalah lembaga pendidikan formal yang berada dibawah pembinaan Dinas Pendidikan Kabupaten Pasuruan.
                 SMP Negeri 1 Wonorejo berada ditengah-tengah masyarakat atau lingkungan yang agamis yang mayoritas penduduknya adalah

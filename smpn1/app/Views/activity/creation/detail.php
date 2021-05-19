@@ -5,7 +5,7 @@
 <!-- header -->
 <div class="mb-5">
     <div class="container container-fluid">
-        <h1 style="font-family: 'Playfair Display', serif; margin-top: 130px;" class="text-center">Judul Artikel</h1>
+        <h1 style="font-family: 'Playfair Display', serif; margin-top: 20px;" class="text-center">Judul Artikel</h1>
     </div>
 </div>
 

@@ -13,6 +13,4 @@ class TeachersController extends BaseController
     {
         return view('profile/teachers/detail');
     }
-
-
 }

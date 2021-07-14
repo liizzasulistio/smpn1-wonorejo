@@ -6,8 +6,13 @@ use App\Controllers\BaseController;
 
 class ActivityController extends BaseController
 {
-	public function index()
+	public function indexActivity()
 	{
-		//
+		return view ('Viewer/Activity/index');
+	}
+
+	public function detailActivity()
+	{
+		return view ('Viewer/Activity/detail');
 	}
 }

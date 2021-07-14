@@ -32,7 +32,33 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+
+$routes->get('/', 'PageController::index');
+
+$routes->get('/profile/fasilitas', 'ProfileController::indexFacilities');
+$routes->get('/profile/kepala-sekolah', 'ProfileController::indexHeadmaster');
+$routes->get('/profile/sejarah', 'ProfileController::indexHistory');
+$routes->get('/profile/tenaga-kependidikan', 'ProfileController::indexTendikProfile');
+$routes->get('/profile/visi-dan-misi', 'ProfileController::indexVisionAndMission');
+
+$routes->get('/profile/guru', 'TeacherController::indexTeacher');
+$routes->get('/profile/detail-guru', 'TeacherController::detailTeacher');
+
+$routes->get('/profile/prestasi', 'AchievementController::indexAchievement');
+$routes->get('/profile/detail-prestasi', 'AchievementController::detailAchievement');
+
+$routes->get('/akademik/peraturan-sekolah', 'AcademicController::indexRules');
+$routes->get('/akademik/daftar-siswa', 'AcademicController::indexStudentsList');
+$routes->get('/akademik/tata-tertib', 'AcademicController::indexTataTertib');
+$routes->get('/akademik/kalender', 'AcademicController::indexCalender');
+
+$routes->get('/kegiatan', 'ActivityController::indexActivity');
+$routes->get('/detail-kegiatan', 'ActivityController::detailActivity');
+
+$routes->get('/gallery', 'GalleryController::detailGallery');
+
+
+
 
 /*
  * --------------------------------------------------------------------

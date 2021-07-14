@@ -6,8 +6,13 @@ use App\Controllers\BaseController;
 
 class TeacherController extends BaseController
 {
-	public function index()
-	{
-		//
-	}
+	public function indexTeacher()
+    {
+        return view('Viewer/Profile/Teacher/index');
+    }
+
+    public function detailTeacher()
+    {
+        return view('Viewer/Profile/Teacher/detail');
+    }
 }

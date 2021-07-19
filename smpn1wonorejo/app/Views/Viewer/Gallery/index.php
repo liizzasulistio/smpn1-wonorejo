@@ -1,5 +1,5 @@
 <!-- Template -->
-<?= $this->extend('Template/template') ?>
+<?= $this->extend('Viewer/Template/template') ?>
 <?= $this->section('content') ?>
 
 <div class="mb-5">

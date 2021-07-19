@@ -1,6 +1,5 @@
-<!-- Template -->
 
-<?= $this->extend('layout/template_body') ?>
+<?= $this->extend('Viewer/Template/template') ?>
 <?= $this->section('content') ?>
 
 <div class="container">

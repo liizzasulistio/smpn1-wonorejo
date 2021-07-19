@@ -30,22 +30,22 @@
 
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#"  style="color:white; text-decoration: none;">Berita</a>
-              </li>
+              </li> -->
 
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color:white; text-decoration: none;">
                   Profil
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="<?= base_url('/sejarah'); ?>">Sejarah</a></li>
-                  <li><a class="dropdown-item" href="<?= base_url('/visi-dan-misi'); ?>">Visi & Misi</a></li>
-                  <li><a class="dropdown-item" href="<?= base_url('/fasilitas'); ?>">Fasilitas</a></li>
-                  <li><a class="dropdown-item" href="<?= base_url('/kepala-sekolah'); ?>">Kepala Sekolah</a></li>
-                  <li><a class="dropdown-item" href="<?= base_url('/tenaga-pendidik'); ?>">Tenaga Pendidik</a></li>
-                  <li><a class="dropdown-item" href="<?= base_url('/tenaga-kependidikan'); ?>">Tenaga Kependidikan</a></li>
-                  <li><a class="dropdown-item" href="<?= base_url('/prestasi'); ?>">Prestasi</a></li>
+                  <li><a class="dropdown-item" href="<?= base_url('/profile/sejarah'); ?>">Sejarah</a></li>
+                  <li><a class="dropdown-item" href="<?= base_url('/profile/visi-dan-misi'); ?>">Visi & Misi</a></li>
+                  <li><a class="dropdown-item" href="<?= base_url('/profile/fasilitas'); ?>">Fasilitas</a></li>
+                  <li><a class="dropdown-item" href="<?= base_url('/profile/kepala-sekolah'); ?>">Kepala Sekolah</a></li>
+                  <li><a class="dropdown-item" href="<?= base_url('/profile/guru'); ?>">Tenaga Pendidik</a></li>
+                  <li><a class="dropdown-item" href="<?= base_url('/profile/tenaga-kependidikan'); ?>">Tenaga Kependidikan</a></li>
+                  <li><a class="dropdown-item" href="<?= base_url('/profile/prestasi'); ?>">Prestasi</a></li>
                 </ul>
               </li>
 
@@ -54,42 +54,22 @@
                   Akademik
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="<?= base_url('/peraturan-akademik'); ?>">Peraturan Akademik</a></li>
-                  <li><a class="dropdown-item" href="<?= base_url('/tata-tertib'); ?>">Tata Tertib</a></li>
-                  <li><a class="dropdown-item" href="<?= base_url('/daftar-siswa'); ?>">Daftar Siswa</a></li>
-                  <li><a class="dropdown-item" href="<?= base_url('/kalender-akademik'); ?>">Kalender Akademik</a></li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color:white; text-decoration: none;">
-                  Kegiatan
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="<?= base_url('/adiwiyata'); ?>">Adiwiyata</a></li>
-                  <li><a class="dropdown-item" href="<?= base_url('/kreasi-dan-inovasi'); ?>">Kreasi & Inovasi</a></li>
-                  <li><a class="dropdown-item" href="<?= base_url('/ekstrakulikuler'); ?>">Ekstrakulikuler</a></li>
+                  <li><a class="dropdown-item" href="<?= base_url('akademik/peraturan-sekolah'); ?>">Peraturan Akademik</a></li>
+                  <li><a class="dropdown-item" href="<?= base_url('/akademik/tata-tertib'); ?>">Tata Tertib</a></li>
+                  <li><a class="dropdown-item" href="<?= base_url('/akademik/daftar-siswa'); ?>">Daftar Siswa</a></li>
+                  <li><a class="dropdown-item" href="<?= base_url('/akademik/kalender'); ?>">Kalender Akademik</a></li>
                 </ul>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" style="color:white; text-decoration: none;" href="<?= base_url('/galleri'); ?>">Galeri</a>
+                <a class="nav-link" style="color:white; text-decoration: none;" href="<?= base_url('/kegiatan'); ?>">Kegiatan</a>
               </li>
 
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color:white; text-decoration: none;">
-                  PPDB
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Formulir</a></li>
-                  <li><a class="dropdown-item" href="<?= base_url('/hasil-seleksi'); ?>">Hasil Seleksi</a></li>
-                </ul>
-              </li> -->
-
               <li class="nav-item">
-                <a class="nav-link" style="color:white; text-decoration: none;" aria-current="page" href="#">Alumni</a>
+                <a class="nav-link" style="color:white; text-decoration: none;" href="<?= base_url('/gallery'); ?>">Galeri</a>
               </li>
             </ul>
+
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>

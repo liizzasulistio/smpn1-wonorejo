@@ -1,5 +1,5 @@
 <!-- Template -->
-<?= $this->extend('layout/template') ?>
+<?= $this->extend('Viewer/Template/template') ?>
 <?= $this->section('content') ?>
 
 <div class="container container-fluid">

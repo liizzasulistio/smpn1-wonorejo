@@ -1,1 +1,0 @@
-# SMPN1_Wonorejo

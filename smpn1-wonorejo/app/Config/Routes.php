@@ -38,7 +38,7 @@ $routes->get('/', 'ViewController::index');
 
 $routes->get('/kegiatan', 'ActivityController::activityIndex');
 $routes->get('/login', 'AuthController::login');
-$routes->get('/register', 'AuthController::create');
+$routes->match(['get', 'post'], '/pengguna/create', 'AuthController::create');
 
 
 

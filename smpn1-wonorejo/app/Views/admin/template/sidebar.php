@@ -92,9 +92,9 @@
         </button></a> 
       </li>
       
-      <!-- <li class="border-top "></li> -->
+      <li class="border-top my-3"></li>
 
-      <li class="mb-1 my-3">
+      <li class="mb-1">
         <a class="link-dark rounded" href="/dashboard">
         <button class="highlight btn align-items-center rounded " style="color:white; text-decoration: none;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">

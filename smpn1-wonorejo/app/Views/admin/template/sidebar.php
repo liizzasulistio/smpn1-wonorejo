@@ -1,4 +1,4 @@
-<main>    
+<aside class="sidebar">    
   <div class="d-flex flex-column flex-shrink-0 p-3" style="background: #084177;">
     <a href="#" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
       <svg class="" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
@@ -92,9 +92,9 @@
         </button></a> 
       </li>
       
-      <li class="border-top my-3"></li>
+      <!-- <li class="border-top "></li> -->
 
-      <li class="mb-1">
+      <li class="mb-1 my-3">
         <a class="link-dark rounded" href="/dashboard">
         <button class="highlight btn align-items-center rounded " style="color:white; text-decoration: none;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
@@ -117,5 +117,5 @@
     </ul>
 
   </div>
-</main>
+</aside>
 

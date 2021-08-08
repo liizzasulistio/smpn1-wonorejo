@@ -1,23 +1,19 @@
-body {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-  }
-  
-  html {
-    height: -webkit-fill-available;
-  }
-  
-  main {
+
+  .sidebar {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    margin: 0%;
     height: 100%;
-    height: -webkit-fill-available;
-    max-height: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
+    z-index: 1;
+    /* height: -webkit-fill-available; */
+    /* max-height: 100%; */
+    padding: 0%;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
-  
-  .b-example-divider {
+ 
+  /* .b-example-divider {
     flex-shrink: 0;
     width: 1.5rem;
     height: 100vh;
@@ -31,9 +27,9 @@ body {
     vertical-align: -.125em;
     pointer-events: none;
     fill: currentColor;
-  }
+  } */
   
-  .dropdown-toggle { outline: 0; }
+  /* .dropdown-toggle { outline: 0; } */
   
   .nav-flush .nav-link {
     border-radius: 0;

@@ -2,7 +2,6 @@
 <?= $this->extend('admin/template/layout')?>
 <?= $this->section('content')?>
 
-
 <h3>Buat Pengguna</h3>
 <div class="container">
     <form action="/save-user" method="post" enctype="multipart/form-data">

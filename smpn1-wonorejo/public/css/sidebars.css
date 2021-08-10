@@ -1,23 +1,20 @@
-body {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-  }
-  
-  html {
-    height: -webkit-fill-available;
-  }
-  
-  main {
+
+  .sidebar {
     display: flex;
-    flex-wrap: nowrap;
-    height: 100vh;
-    height: -webkit-fill-available;
-    max-height: 100vh;
-    overflow-x: auto;
-    overflow-y: hidden;
+    /* ANJAYYYY */
+    flex-wrap: wrap; 
+    margin: 0%;
+    height: 100%;
+    /* z-index: 1; */
+    /* height: -webkit-fill-available; */
+    /* max-height: 100%; */
+    padding: 0%;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
-  
-  .b-example-divider {
+ 
+  /* .b-example-divider {
     flex-shrink: 0;
     width: 1.5rem;
     height: 100vh;
@@ -31,9 +28,9 @@ body {
     vertical-align: -.125em;
     pointer-events: none;
     fill: currentColor;
-  }
+  } */
   
-  .dropdown-toggle { outline: 0; }
+  /* .dropdown-toggle { outline: 0; } */
   
   .nav-flush .nav-link {
     border-radius: 0;
@@ -48,8 +45,15 @@ body {
     background-color: transparent;
     border: 0;
   }
+
   .btn-toggle:hover,
   .btn-toggle:focus {
+    color: rgba(0, 0, 0, .85);
+    background-color: #035397;
+  }
+
+  .highlight:hover,
+  .highlight:focus {
     color: rgba(0, 0, 0, .85);
     background-color: #035397;
   }
@@ -63,7 +67,7 @@ body {
   }
   
   .btn-toggle[aria-expanded="true"] {
-    color: rgba(0, 0, 0, .85);
+    color: white;
   }
   .btn-toggle[aria-expanded="true"]::before {
     transform: rotate(90deg);

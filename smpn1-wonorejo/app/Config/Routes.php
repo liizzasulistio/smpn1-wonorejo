@@ -37,10 +37,11 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'ViewController::index');
 
 $routes->get('/kegiatan', 'ActivityController::activityIndex');
+
 $routes->get('/login', 'AuthController::login');
+$routes->get('/pengguna', 'AuthController::index');
 $routes->match(['get', 'post'], '/pengguna/create', 'AuthController::create');
-
-
+$routes->match(['get', 'post'], '/save-user', 'AuthController::save');
 
 
 

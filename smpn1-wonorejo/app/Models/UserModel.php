@@ -12,6 +12,28 @@ class UserModel extends Model
         'UserUsername',
         'UserEmail',
         'UserPassword',
-        'UserRole'
+        'UserRole',
+        'UserStatus',
+        'uniid',
     ];
+    protected $beforeInsert = ['beforeInsert'];
+    protected $beforeUpdate = ['beforeUpdate'];
+
+    protected function beforeInsert(array $data)
+    {
+        $data = $this->passwordHash($data);
+        return $data;
+    }
+    protected function beforeUpdate(array $data)
+    {
+        $data = $this->passwordHash($data);
+        return $data;
+    }
+
+    protected function passwordHash(array $data)
+    {
+        if(isset($data['data']['UserPassword']))
+            $data['data']['UserPassword'] = password_hash($data['data']['UserPassword'], PASSWORD_DEFAULT);
+        return $data;
+    }
 }

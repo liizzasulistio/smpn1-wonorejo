@@ -1,5 +1,5 @@
 <!-- Template -->
-<?= $this->extend('Viewer/Template/template_body') ?>
+<?= $this->extend('Viewer/Template/template') ?>
 <?= $this->section('content') ?>
 
 <div class="mb-5 mt-5">
@@ -13,7 +13,8 @@
 
     <div class="row row-cols-1 row-cols-md-2 mb-5">
         <div class="col-md-5">
-            <img src="images/img_full.png" class="img-fluid" alt="SMPN 1 Wonorejo" style="width: 100%; height:200px; object-fit: fill; margin:0;">
+            <img src="http://localhost:8080/images/img_full.png" class="inline" alt="SMPN 1 Wonorejo" style="width: 100%; height: 200px; object-fit: fill; margin:0;">
+            <!-- <img src="images/img_full.png" class="img-fluid" alt="SMPN 1 Wonorejo" style="width: 100%; height:200px; object-fit: fill; "> -->
         </div>
         <div class="col-md-7">
             <h5><b> RUANG KELAS </b></h5>

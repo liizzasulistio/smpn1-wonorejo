@@ -55,7 +55,7 @@ $routes->get('/akademik/kalender', 'AcademicController::indexCalender');
 $routes->get('/kegiatan', 'ActivityController::indexActivity');
 $routes->get('/detail-kegiatan', 'ActivityController::detailActivity');
 
-$routes->get('/gallery', 'GalleryController::detailGallery');
+$routes->get('/gallery', 'GalleryController::indexGallery');
 
 
 

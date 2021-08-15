@@ -30,7 +30,7 @@
         </div>
 
         <div class="col-md-4">
-            <img src="images/img_full.png" style="width: 60%; height: 100%" class="inline">
+            <img src="http://localhost:8080/images/img_full.png" style="width: 60%; height: 100%" class="inline">
         </div>
     </div>
 

@@ -9,9 +9,9 @@
           <div class="top-header">
             <!-- <div class="mx-auto d-sm-flex d-block flex-sm-nowrap"> -->
             <a class="navbar-brand" href="<?= base_url('/'); ?>">
-              <img src="images/logo.png" alt="SMPN 1 Wonorejo" width="50" height="50" style="border-radius: 100px;">
+              <img src="http://localhost:8080/images/logo.png" alt="SMPN 1 Wonorejo" width="70" height="70" style="border-radius: 100px;">
               <!-- Kalau masih tidak bisa, src untuk gambarnya bisa pakai link yg ini https://i.imgur.com/EOvVWjz.png -->
-              <span class="navbar-brand flex-grow-1" style="color:white; text-decoration: none;"><b> SMPN 1 WONOREJO </b></span>
+              <span class="navbar-brand" style="color:white; text-decoration: none;"><b> SMPN 1 WONOREJO </b></span>
             </a>
           </div>
         </div>

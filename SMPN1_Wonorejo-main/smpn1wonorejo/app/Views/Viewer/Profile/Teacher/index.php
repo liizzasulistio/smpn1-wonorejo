@@ -14,25 +14,25 @@
         <!-- <div class="col-md-10 mx-auto"> -->
             <div class="col-md-3">
                 <img src="images/img_full.png" width="150" height="150" class="bd-placeholder-img">
-                <h4 class="mt-2"><a class="stretched-link" href="<?= base_url('/detail-tenaga-pendidik'); ?>" style="color:black; text-decoration: none;"> Nama Guru </a></h4>
+                <h4 class="mt-2"><a class="stretched-link" href="<?= base_url('/profile/detail-guru'); ?>" style="color:black; text-decoration: none;"> Nama Guru </a></h4>
                 <p>mata pembelajaran</p>
             </div>
 
             <div class="col-md-3">
                 <img src="images/img_full.png" width="150" height="150" class="bd-placeholder-img">
-                 <h4 class="mt-2"><a class="stretched-link" href="<?= base_url('/detail-tenaga-pendidik'); ?>" style="color:black; text-decoration: none;"> Nama Guru </a></h4>
+                 <h4 class="mt-2"><a class="stretched-link" href="<?= base_url('/profile/detail-guru'); ?>" style="color:black; text-decoration: none;"> Nama Guru </a></h4>
                 <p>mata pembelajaran</p>
             </div>
 
             <div class="col-md-3">
                 <img src="images/img_full.png" width="150" height="150" class="bd-placeholder-img">
-                 <h4 class="mt-2"><a class="stretched-link" href="<?= base_url('/detail-tenaga-pendidik'); ?>" style="color:black; text-decoration: none;"> Nama Guru </a></h4>
+                 <h4 class="mt-2"><a class="stretched-link" href="<?= base_url('/profile/detail-guru'); ?>" style="color:black; text-decoration: none;"> Nama Guru </a></h4>
                 <p>mata pembelajaran</p>
             </div>
 
             <div class="col-md-3">
                 <img src="images/img_full.png" width="150" height="150" class="bd-placeholder-img">
-                 <h4 class="mt-2"><a class="stretched-link" href="<?= base_url('/detail-tenaga-pendidik'); ?>" style="color:black; text-decoration: none;"> Nama Guru </a></h4>
+                 <h4 class="mt-2"><a class="stretched-link" href="<?= base_url('/profile/detail-guru'); ?>" style="color:black; text-decoration: none;"> Nama Guru </a></h4>
                 <p>mata pembelajaran</p>
             </div>
         <!-- </div> -->

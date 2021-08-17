@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
 
 <!-- corousel -->
-<img src="images/img_full.png" class="img-fluid" alt="SMPN 1 Wonorejo" style="width: 100%; height:650px; object-fit: fill;">
+<img src="images/img_full.png" class="img-fluid" alt="SMPN 1 Wonorejo" style="width: 100%; height:600px;">
 
 <div style="width: 100%; height: 60px; background-color:#cfaf87;">
     <p class="pt-3 text-center">Unggul Dalam Prestasi, Beriman dan Bertakwa, Berkarakter dan Berbudaya Lingkungan</p>
@@ -81,7 +81,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <small class="text-muted">oleh Administrator</small>
                         <small class="text-muted">12 Februari 2021</small>
-                        <small class="text-muted">Dilihat 196 kali</small>
+                        <small class="text-muted">kategori</small>
                     </div>
                 </div>
             </div>
@@ -96,7 +96,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <small class="text-muted">oleh Administrator</small>
                         <small class="text-muted">12 Februari 2021</small>
-                        <small class="text-muted">Dilihat 196 kali</small>
+                        <small class="text-muted">kategori</small>
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <small class="text-muted">oleh Administrator</small>
                         <small class="text-muted">12 Februari 2021</small>
-                        <small class="text-muted">Dilihat 196 kali</small>
+                        <small class="text-muted">kategori</small>
                     </div>
                 </div>
             </div>

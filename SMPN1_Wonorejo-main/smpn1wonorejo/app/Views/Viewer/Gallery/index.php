@@ -2,7 +2,7 @@
 <?= $this->extend('Viewer/Template/template') ?>
 <?= $this->section('content') ?>
 
-<div class="mb-5">
+<div class="mb-5 mt-5">
     <div class="container text-center">
         <h2 style="font-family: 'Roboto', sans-serif;"><b> GALLERY </b></h2>
         <hr style="width: 10%; margin:auto; height:3px; color:#cd8d7b;">

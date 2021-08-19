@@ -3,10 +3,11 @@
 <?= $this->section('content') ?>
 
 <!-- header -->
-<div class="pb-3">
+<div class="mb-5 mt-5">
     <div class="container text-center">
-        <h1 style="font-family: 'Roboto', sans-serif; margin-top: 40px;" class="mb-3"><b> Adiwiyata </b></h1>
+        <h1 style="font-family: 'Roboto', sans-serif;" class="mb-3"><b>Adiwiyata</b></h1>
         <h3 style="font-family: 'Playfair Display', serif;">portofolio kegiatan adiwiyata</h3>
+        <hr style="width: 10%; margin:auto; height:3px; color:#cd8d7b;">
     </div>
 </div>
 
@@ -28,7 +29,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <small class="text-muted">oleh Administrator</small>
                             <small class="text-muted">12 Februari 2021</small>
-                            <small class="text-muted">Dilihat 196 kali</small>
+                            <small class="text-muted">Kategori A</small>
                         </div>
                     </div>
                 </div>

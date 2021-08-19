@@ -2,16 +2,14 @@
 <?= $this->extend('admin/template/layout')?>
 <?= $this->section('content')?>
 
-
 <div class="container">
-<h3>Pengguna</h3>
-<br>
-    <a href="/pengguna/create" class="btn btn-primary mb-2">Tambah</a>
-
-
-    <?php if($user): ?>
+    <h3>Kegiatan</h3>
+    <br>
+    <a href="/kegiatan/create" class="btn btn-primary">Tambah</a>
+    
+    <?php if($activity): ?>
         <?php $i = 1; ?>
-<table class="table table-hover table-bordered">
+<table class="table table-hover table-bordered mt-3">
     <thead>
         <tr>
             <th scope="col">No.</th>
@@ -22,14 +20,14 @@
         </tr>
     </thead>
     <tbody>
-        <?php foreach($user as $u): ?>
+        <?php foreach($activity as $a): ?>
         <tr>
             <th scope="row"><?= $i?></th>
-            <td scope="row"><?= $u['UserName']?></td>
-            <td scope="row"><?= $u['UserUsername']?></td>
-            <td scope="row"><?= $u['UserRole']?></td>
+            <td scope="row"><?= $a['ActivityTitle']?></td>
+            <td scope="row"><?= $a['UserID_FK']?></td>
+            <td scope="row"><?= $a['ActivityText']?></td>
             <th scope="row">
-                <a href="/pengguna/read/<?= $u['UserUsername'] ?>" class="btn btn-success">Detail</a>
+                <a href="/pengguna/read/<?= $a['slug'] ?>" class="btn btn-success">Detail</a>
             </th>
         </tr>
         <?php $i++; ?>
@@ -39,5 +37,8 @@
 </table>
 <?php endif; ?>
 </div>
+    
+</div>
+
 
 <?= $this->endSection()?>

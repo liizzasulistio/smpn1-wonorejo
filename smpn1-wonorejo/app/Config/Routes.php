@@ -33,25 +33,31 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 
-//index routes
+//Viewer
 $routes->get('/', 'ViewController::index');
+$routes->get('/tenaga-pendidik', 'ViewController::teacherIndex');
+$routes->match(['get', 'post'], '/tenaga-pendidik/(:segment)', 'ViewController::teacherDetail/$1');
+$routes->get('/kegiatan', 'ViewController::activityIndex');
 
-$routes->get('/kegiatan', 'ActivityController::activityIndex');
+//Login and Logout
+$routes->match(['get', 'post'], '/login', 'AuthController::login');
+$routes->get('/logout', 'AuthController::logout');
 
-$routes->get('/login', 'AuthController::login');
+//User Management
 $routes->get('/pengguna', 'AuthController::index');
 $routes->match(['get', 'post'], '/pengguna/create', 'AuthController::create');
 $routes->match(['get', 'post'], '/save-user', 'AuthController::save');
 
+//Activity Management
+$routes->get('/admin/kegiatan', 'ActivityController::index');
+$routes->match(['get', 'post'], '/kegiatan/create', 'ActivityController::create');
+$routes->match(['get', 'post'], '/save-activity', 'ActivityController::save');
+// $routes->get('/kegiatan', 'ActivityController::activityIndex');
 
-
-
-
-
-
-
-
-
+//Teacher Management
+$routes->get('/admin/tenaga-pendidik', 'TeacherController::index');
+$routes->match(['get', 'post'], '/tenaga-pendidik/create', 'TeacherController::create');
+$routes->match(['get', 'post'], '/save-teacher', 'TeacherController::save');
 
 /*
  * --------------------------------------------------------------------

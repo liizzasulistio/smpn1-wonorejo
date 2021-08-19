@@ -45,7 +45,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3">
-                    <img src="images/logo.png" alt="SMPN 1 Wonorejo" width="60" style="border-radius: 100px;">
+                    <img src="<?= base_url()?>/icons/logo.png" alt="SMPN 1 Wonorejo" width="60" style="border-radius: 100px;">
                     <medium class="d-block mt-2"><b>SMP NEGERI 1 WONOREJO</b></medium>
                     <p class="text-small">Unggul Dalam Prestasi, Beriman Dan Bertakwa, Berkarakter dan Berbudaya Lingkungan</p>
                 </div>
@@ -130,11 +130,5 @@
         <p><a href="#">Back to top</a></p> -->
     </footer>
 
-
 </body>
-
-
-
-
-
 </html>

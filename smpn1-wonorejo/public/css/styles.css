@@ -15,4 +15,11 @@ footer {
     font-weight: bold;
 }
 
+.ava-img
+{
+    width: 100%; height: 100%; 
+    max-width: 160px;
+    max-height: 160px;
+    object-fit:cover; margin:0;
+}
 

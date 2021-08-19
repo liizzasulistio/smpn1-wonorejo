@@ -18,6 +18,15 @@
         </button></a> 
       </li>
 
+      <li class="mb-1">
+        <a class="link-dark rounded" href="/pengguna">
+        <button class="highlight btn align-items-center rounded " style="color:white; text-decoration: none;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
+            <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+          </svg> 
+          <b> Pengguna</b>
+        </button></a> 
+      </li>
       <!-- <li class="mb-1">
         <a class="link-dark rounded" href="/admin-profil-sekolah">
         <button class="btn align-items-center rounded " style="color:white; text-decoration: none;">
@@ -39,7 +48,7 @@
             <li><a href="/admin-visi-misi" class="link-dark rounded" style="color:white; text-decoration: none;">Visi dan Misi</a></li>
             <li><a href="/admin-fasilitas" class="link-dark rounded" style="color:white; text-decoration: none;">Fasilitas</a></li>
             <li><a href="/admin-fasilitas" class="link-dark rounded" style="color:white; text-decoration: none;">Kepala Sekolah</a></li>
-            <li><a href="/admin-fasilitas" class="link-dark rounded" style="color:white; text-decoration: none;">Tenaga Pendidik</a></li>
+            <li><a href="/admin/tenaga-pendidik" class="link-dark rounded" style="color:white; text-decoration: none;">Tenaga Pendidik</a></li>
             <li><a href="/admin-fasilitas" class="link-dark rounded" style="color:white; text-decoration: none;">Tenaga Kependidikan</a></li>
             <li><a href="/admin-prestasi" class="link-dark rounded" style="color:white; text-decoration: none;">Prestasi</a></li>
           </ul>
@@ -66,12 +75,14 @@
 
 
       <li class="mb-1">
+        <a class="link-dark rounded" href="/admin/kegiatan">
         <button class="highlight btn align-items-center rounded " style="color:white; text-decoration: none;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
             <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
-          </svg>
+          </svg> 
           <b> Kegiatan</b>
-        </button>
+        </button></a> 
+      </li>
 
         <!-- <div class="collapse show" id="c-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -80,7 +91,7 @@
             <li><a href="#" class="link-dark rounded" style="color:white; text-decoration: none;">Ekstrakulikuler</a></li>
           </ul>
         </div> -->
-      </li>
+      <!-- </li> -->
 
       <li class="mb-1">
         <a class="link-dark rounded" href="/dashboard">
@@ -105,7 +116,7 @@
       </li>
       
       <li class="mb-1">
-        <a class="link-dark rounded" href="/dashboard">
+        <a class="link-dark rounded" href="/logout">
         <button class="highlight btn align-items-center rounded " style="color:white; text-decoration: none;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>

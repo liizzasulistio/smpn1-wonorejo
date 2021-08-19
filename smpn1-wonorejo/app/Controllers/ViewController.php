@@ -1,8 +1,16 @@
 <?php
 namespace App\Controllers;
 
+use App\Models\TeacherModel;
+
 class ViewController extends BaseController
 {
+
+    public function __construct()
+    {
+        $this->TeacherModel = new TeacherModel();
+    }
+
     //showing landing page to viewer
     public function index()
     {
@@ -19,12 +27,33 @@ class ViewController extends BaseController
         $data = [
             'title' => 'Kegiatan',
         ];
-        return view('viewer/activity/activity_index', $data);
+        return view('viewer/activity/activity', $data);
     }
   
     public function activityDetail()
     {
-  
+        $data = [
+            'title' => 'Kegiatan',
+        ];
+        return view('viewer/activity/activity_detail', $data);
+    }
+
+    public function teacherIndex()
+    {
+        $data = [
+            'title' => 'Tenaga Pendidik',
+            'tenagaPendidik' => $this->TeacherModel->getTeacher(),
+        ];
+        return view('viewer/profile/teacher', $data);
+    }
+
+    public function teacherDetail($slug)
+    {
+        $data = [
+            'title' => 'Detail Guru',
+            'tenagaPendidik' => $this->TeacherModel->getTeacher($slug),
+        ];
+        return view('viewer/profile/teacher_detail', $data);
     }
 
 }

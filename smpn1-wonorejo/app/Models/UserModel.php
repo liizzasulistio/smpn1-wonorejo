@@ -10,11 +10,9 @@ class UserModel extends Model
     [
         'UserName',
         'UserUsername',
-        'UserEmail',
         'UserPassword',
         'UserRole',
         'UserStatus',
-        'uniid',
     ];
     protected $beforeInsert = ['beforeInsert'];
     protected $beforeUpdate = ['beforeUpdate'];
@@ -35,5 +33,14 @@ class UserModel extends Model
         if(isset($data['data']['UserPassword']))
             $data['data']['UserPassword'] = password_hash($data['data']['UserPassword'], PASSWORD_DEFAULT);
         return $data;
+    }
+
+    public function getUser($UserUsername = false)
+    {
+        if($UserUsername == false)
+        {
+            return $this->findAll();
+        }
+        return $this->where(['UserUsername' => $UserUsername])->first();
     }
 }

@@ -35,6 +35,8 @@ $routes->setAutoRoute(true);
 
 //Viewer
 $routes->get('/', 'ViewController::index');
+$routes->get('/sejarah', 'ViewController::history');
+$routes->get('/visi-dan-misi', 'ViewController::visionMission');
 $routes->get('/tenaga-pendidik', 'ViewController::teacherIndex');
 $routes->match(['get', 'post'], '/tenaga-pendidik/(:segment)', 'ViewController::teacherDetail/$1');
 $routes->get('/kegiatan', 'ViewController::activityIndex');
@@ -51,6 +53,13 @@ $routes->get('/dashboard', 'AdminController::dashboard');
 $routes->get('/pengguna', 'AuthController::index');
 $routes->match(['get', 'post'], '/pengguna/create', 'AuthController::create');
 $routes->match(['get', 'post'], '/save-user', 'AuthController::save');
+
+//Profile Management
+//History
+$routes->get('/admin/sejarah', 'ProfileController::history');
+$routes->match(['get', 'post'], '/save-history', 'ProfileController::saveHistory');
+$routes->match(['get', 'post'], '/update-history/(:segment)', 'ProfileController::updateHistory/$1');
+$routes->get('/delete-history/(:segment)', 'ProfileController::deleteHistory/$1');
 
 //Activity Management
 $routes->get('/admin/kegiatan', 'ActivityController::index');

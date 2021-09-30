@@ -20,6 +20,21 @@ class ViewController extends BaseController
         return view('index', $data);
     }
 
+    public function history()
+    {
+        $data = [
+            'title' => 'Sejarah',
+        ];
+        return view('viewer/profile/history', $data);
+    }
+
+    public function visionMission()
+    {
+        $data = [
+            'title' => 'Visi dan Misi',
+        ];
+        return view('viewer/profile/vision-mission', $data);
+    }
 
     // For Viewer
     public function activityIndex()
@@ -56,12 +71,12 @@ class ViewController extends BaseController
         return view('viewer/profile/teacher_detail', $data);
     }
 
-    public function StaffIndex()
+    public function staffIndex()
     {
         
     }
 
-    public function StaffDetail()
+    public function staffDetail()
     {
 
     }

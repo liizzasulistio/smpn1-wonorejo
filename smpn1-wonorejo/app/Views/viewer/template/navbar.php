@@ -31,7 +31,7 @@
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#"  style="color:white; text-decoration: none;">Beranda</a>
+                <a class="nav-link" aria-current="page" href="/"  style="color:white; text-decoration: none;">Beranda</a>
               </li>
 
               <li class="nav-item dropdown">
@@ -78,7 +78,7 @@
 
 
               <li class="nav-item">
-                <a class="nav-link" style="color:white; text-decoration: none;" href="<?= base_url('/galleri'); ?>">Galeri</a>
+                <a class="nav-link" style="color:white; text-decoration: none;" href="<?= base_url('/galeri'); ?>">Galeri</a>
               </li>
 
               <!-- <li class="nav-item dropdown">

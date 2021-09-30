@@ -49,7 +49,7 @@
             <li><a href="/admin-fasilitas" class="link-dark rounded" style="color:white; text-decoration: none;">Fasilitas</a></li>
             <li><a href="/admin-fasilitas" class="link-dark rounded" style="color:white; text-decoration: none;">Kepala Sekolah</a></li>
             <li><a href="/admin/tenaga-pendidik" class="link-dark rounded" style="color:white; text-decoration: none;">Tenaga Pendidik</a></li>
-            <li><a href="/admin-fasilitas" class="link-dark rounded" style="color:white; text-decoration: none;">Tenaga Kependidikan</a></li>
+            <li><a href="/admin/tenaga-kependidikan" class="link-dark rounded" style="color:white; text-decoration: none;">Tenaga Kependidikan</a></li>
             <li><a href="/admin-prestasi" class="link-dark rounded" style="color:white; text-decoration: none;">Prestasi</a></li>
           </ul>
         </div>

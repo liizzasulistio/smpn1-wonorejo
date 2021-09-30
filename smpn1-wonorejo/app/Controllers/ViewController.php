@@ -42,7 +42,7 @@ class ViewController extends BaseController
     {
         $data = [
             'title' => 'Tenaga Pendidik',
-            'tenagaPendidik' => $this->TeacherModel->getTeacher(),
+            'teacher' => $this->TeacherModel->getTeacher(),
         ];
         return view('viewer/profile/teacher', $data);
     }
@@ -51,9 +51,27 @@ class ViewController extends BaseController
     {
         $data = [
             'title' => 'Detail Guru',
-            'tenagaPendidik' => $this->TeacherModel->getTeacher($slug),
+            'teacher' => $this->TeacherModel->getTeacher($slug),
         ];
         return view('viewer/profile/teacher_detail', $data);
+    }
+
+    public function StaffIndex()
+    {
+        
+    }
+
+    public function StaffDetail()
+    {
+
+    }
+
+    public function galleryIndex()
+    {
+        $data = [
+            'title' => 'Galeri'
+        ];
+        return view('viewer/gallery', $data);
     }
 
 }

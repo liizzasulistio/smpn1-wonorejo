@@ -2,12 +2,13 @@
 <?= $this->extend('admin/template/layout')?>
 <?= $this->section('content')?>
 
+
 <div class="container">
-<h3>Tenaga Pendidik</h3>
+<h3>Tenaga Kependidikan</h3>
 <br>
 <div class="row mb-3">
     <div class="col-8">
-        <a href="/admin/tenaga-pendidik/create" class="btn btn-primary mb-2">Tambah</a>
+        <a href="/admin/tenaga-kependidikan/create" class="btn btn-primary mb-2">Tambah</a>
     </div>
     <div class="col-4"><form method="get">
         <div class="input-group">
@@ -22,30 +23,30 @@
     <?= session()->getFlashdata('message'); ?>
   </div>
 <?php endif; ?>
-<?php if($teacher):?>
+<?php if($staff):?>
     
     <table class="table table-bordered">
         <thead>
             <tr>
                 <th scope="col" style="text-align: center;">No.</th>
-                <th scope="col" style="text-align: center;">NIP</th>
+                <th scope="col" style="text-align: center;">NUPTK</th>
                 <th scope="col" style="text-align: center;">Nama</th>
-                <th scope="col" style="text-align: center;">Mata Pelajaran</th>
+                <th scope="col" style="text-align: center;">Posisi</th>
                 <th scope="col" style="text-align: center;">Aksi</th>
             </tr>
         </thead>
 
         <tbody>   
         <?php $i = 1 + (10 * ($currentPage -1)); ?>
-        <?php foreach($teacher as $t):?>
+        <?php foreach($staff as $t):?>
          
             <tr>
                 <th scope="col" style="text-align: center;"><?= $i ?>.</th>
-                <td><?= $t['TeacherNIP'] ?></td>
-                <td><?= $t['TeacherName'] ?></td>
-                <td><?= $t['TeacherSubject'] ?></td>
+                <td><?= $t['StaffNUPTK'] ?></td>
+                <td><?= $t['StaffName'] ?></td>
+                <td><?= $t['StaffPosition'] ?></td>
                 <td style="text-align: center;">
-                <a href="/admin/tenaga-pendidik/<?= $t['slug'] ?>" class="btn btn-success">Detail</a>
+                <a href="/admin/tenaga-kependidikan/<?= $t['slug'] ?>" class="btn btn-success">Detail</a>
                 </td>
             </tr>
 
@@ -67,7 +68,9 @@
     <?php endif; ?>
 
 <!-- Pagination -->
-<?= $pager->links('teacher', 'pager'); ?>
+<?= $pager->links('staff', 'pager'); ?>
 
 </div>
+
+
 <?= $this->endSection()?>

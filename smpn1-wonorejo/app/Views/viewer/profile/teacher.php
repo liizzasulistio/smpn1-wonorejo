@@ -11,16 +11,16 @@
 
     <div class="row text-center pt-3">
    
-        <?php foreach($tenagaPendidik as $tp): ?>
+        <?php foreach($teacher as $t): ?>
 
             <div class="col-md-3">
-                <?php if($tp['TeacherPhoto'] == null):?>
+                <?php if($t['TeacherPhoto'] == null):?>
                     <img src="<?= base_url('./icons/user.png')?>"  class="bd-placeholder-img ava-img">
                 <?php else: ?>
-                <img src="<?= base_url('./images/'.$tp['TeacherPhoto'])?>" class="bd-placeholder-img ava-img">
+                <img src="<?= base_url('./images/'.$t['TeacherPhoto'])?>" class="bd-placeholder-img ava-img">
                 <?php endif; ?>
-                <h4 class="mt-2"><a  href="<?= base_url('/tenaga-pendidik/'.$tp['slug']); ?>" style="color:black; text-decoration: none;"><?= $tp['TeacherName']?></a></h4>
-                <p><?= $tp['TeacherSubject']?></p>
+                <h4 class="mt-2"><a  href="<?= base_url('/tenaga-pendidik/'.$t['slug']); ?>" style="color:black; text-decoration: none;"><?= $t['TeacherName']?></a></h4>
+                <p><?= $t['TeacherSubject']?></p>
             </div>
 <?php endforeach; ?>
           

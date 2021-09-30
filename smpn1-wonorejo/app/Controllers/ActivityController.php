@@ -54,12 +54,6 @@ class ActivityController extends BaseController
                     'required' => 'Isi kegiatan harus diisi',
                 ],
             ],
-            // 'ActivityImage' => [
-            //     'rules' => 'required',
-            //     'errors' => [
-            //         'required' => 'Foto sampul kegiatan harus diisi',
-            //     ],
-            // ],
             'TagItem' => [
                 'rules' => 'required',
                 'errors' => [
@@ -70,6 +64,21 @@ class ActivityController extends BaseController
             {
                 $validation = \Config\Services::validation();
                 return redirect()->to('/kegiatan/create')->withInput()->with('validation', $validation);
+            }
+
+            chmod('./images/', 0777);
+            $photoFile = $this->mRequest->getFile('ActivityImage');
+    
+            if($photoFile->getError() == 4)
+            {
+                $photoName = '';
+               
+            }
+            else
+            {
+                $photoName = $photoFile->getRandomName();
+                $photoFile->move('./images', $photoName);
+        
             }
 
             $userID = session()->get('UserID');
@@ -93,7 +102,7 @@ class ActivityController extends BaseController
                 'ActivityTitle' => $this->mRequest->getVar('ActivityTitle'),
                 'slug' => $slug,
                 'ActivityText' => $this->mRequest->getVar('ActivityText'),
-                // 'ActivityImage' => $this->mRequest->getVar('ActivityImage'),
+                'ActivityImage' => $photoName,
                 'UserID_FK' => $userID,
                 'TagItem' => $this->mRequest->getVar('TagItem'),
             ]);

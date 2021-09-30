@@ -38,10 +38,14 @@ $routes->get('/', 'ViewController::index');
 $routes->get('/tenaga-pendidik', 'ViewController::teacherIndex');
 $routes->match(['get', 'post'], '/tenaga-pendidik/(:segment)', 'ViewController::teacherDetail/$1');
 $routes->get('/kegiatan', 'ViewController::activityIndex');
+$routes->get('/galeri', 'ViewController::galleryIndex');
 
 //Login and Logout
 $routes->match(['get', 'post'], '/login', 'AuthController::login');
 $routes->get('/logout', 'AuthController::logout');
+
+//Dashboard
+$routes->get('/dashboard', 'AdminController::dashboard');
 
 //User Management
 $routes->get('/pengguna', 'AuthController::index');
@@ -56,8 +60,17 @@ $routes->match(['get', 'post'], '/save-activity', 'ActivityController::save');
 
 //Teacher Management
 $routes->get('/admin/tenaga-pendidik', 'TeacherController::index');
-$routes->match(['get', 'post'], '/tenaga-pendidik/create', 'TeacherController::create');
+$routes->match(['get', 'post'], '/admin/tenaga-pendidik/create', 'TeacherController::create');
 $routes->match(['get', 'post'], '/save-teacher', 'TeacherController::save');
+$routes->get('/admin/tenaga-pendidik/(:segment)', 'TeacherController::read/$1');
+$routes->match(['get', 'post'], '/admin/tenaga-pendidik/update/(:segment)', 'TeacherController::update/$1');
+$routes->match(['get', 'post'], '/save-teacher-update/(:segment)', 'TeacherController::edit/$1');
+$routes->get('/delete-tenaga-pendidik/(:segment)', 'TeacherController::delete/$1');
+
+//Staff Management
+$routes->get('/admin/tenaga-kependidikan', 'StaffController::index');
+$routes->match(['get', 'post'], '/admin/tenaga-kependidikan/create', 'StaffController::create');
+
 
 /*
  * --------------------------------------------------------------------

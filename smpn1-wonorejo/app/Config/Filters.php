@@ -37,6 +37,9 @@ class Filters extends BaseConfig
 				'/', 'ViewController/index',
 				'/login', 'AuthController/login',
 				'/kegiatan', 'ViewController/activityIndex',
+				'/tenaga-pendidik', 'ViewController/teacherIndex',
+				'/tenaga-pendidik/*', 'ViewController/teacherDetail',
+				'/galeri', 'ViewController/galleryIndex',
 			]]
 		],
 		'after'  => [

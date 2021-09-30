@@ -23,7 +23,12 @@ class TeacherModel extends Model
             return $this->findAll();
         }
         return $this->where(['slug' => $slug])->first();
+    }
 
+    public function search($keyword)
+    {
+        return $this->table('teachers')->like('TeacherNIP', $keyword)
+        ->orLike('TeacherName', $keyword)->orLike('TeacherSubject', $keyword);
     }
 
 

@@ -44,10 +44,10 @@
 
         <div class="collapse show" id="home-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li><a href="/admin-sejarah" class="link-dark rounded" style="color:white; text-decoration: none;">Sejarah</a></li>
+            <li><a href="/admin/sejarah" class="link-dark rounded" style="color:white; text-decoration: none;">Sejarah</a></li>
             <li><a href="/admin-visi-misi" class="link-dark rounded" style="color:white; text-decoration: none;">Visi dan Misi</a></li>
             <li><a href="/admin-fasilitas" class="link-dark rounded" style="color:white; text-decoration: none;">Fasilitas</a></li>
-            <li><a href="/admin-fasilitas" class="link-dark rounded" style="color:white; text-decoration: none;">Kepala Sekolah</a></li>
+            <li><a href="/admin/headmaster" class="link-dark rounded" style="color:white; text-decoration: none;">Kepala Sekolah</a></li>
             <li><a href="/admin/tenaga-pendidik" class="link-dark rounded" style="color:white; text-decoration: none;">Tenaga Pendidik</a></li>
             <li><a href="/admin/tenaga-kependidikan" class="link-dark rounded" style="color:white; text-decoration: none;">Tenaga Kependidikan</a></li>
             <li><a href="/admin-prestasi" class="link-dark rounded" style="color:white; text-decoration: none;">Prestasi</a></li>
@@ -67,7 +67,7 @@
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
             <li><a href="/admin-kepala-sekolah" class="link-dark rounded" style="color:white; text-decoration: none;">Aturan</a></li>
             <li><a href="/admin-tenaga-pendidik" class="link-dark rounded" style="color:white; text-decoration: none;">Daftar Siswa</a></li>
-            <li><a href="/admin-tenaga-kependidikan" class="link-dark rounded" style="color:white; text-decoration: none;">Tata Tertib</a></li>
+            <li><a href="/admin/tata-tertib" class="link-dark rounded" style="color:white; text-decoration: none;">Tata Tertib</a></li>
             <li><a href="/admin-tenaga-kependidikan" class="link-dark rounded" style="color:white; text-decoration: none;">Kalender</a></li>
           </ul>
         </div>
@@ -129,4 +129,3 @@
 
   </div>
 </aside>
-

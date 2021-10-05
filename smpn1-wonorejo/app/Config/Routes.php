@@ -35,6 +35,8 @@ $routes->setAutoRoute(true);
 
 //Viewer
 $routes->get('/', 'ViewController::index');
+$routes->get('/sejarah', 'ViewController::history');
+$routes->get('/visi-dan-misi', 'ViewController::visionMission');
 $routes->get('/tenaga-pendidik', 'ViewController::teacherIndex');
 $routes->match(['get', 'post'], '/tenaga-pendidik/(:segment)', 'ViewController::teacherDetail/$1');
 $routes->get('/kegiatan', 'ViewController::activityIndex');
@@ -51,6 +53,19 @@ $routes->get('/dashboard', 'AdminController::dashboard');
 $routes->get('/pengguna', 'AuthController::index');
 $routes->match(['get', 'post'], '/pengguna/create', 'AuthController::create');
 $routes->match(['get', 'post'], '/save-user', 'AuthController::save');
+
+//Profile Management
+//History
+$routes->get('/admin/sejarah', 'ProfileController::history');
+$routes->match(['get', 'post'], '/save-history', 'ProfileController::saveHistory');
+$routes->match(['get', 'post'], '/update-history/(:segment)', 'ProfileController::updateHistory/$1');
+$routes->get('/delete-history/(:segment)', 'ProfileController::deleteHistory/$1');
+
+//Rules/Tata tertib Management
+$routes->get('/admin/tata-tertib', 'RulesController::index');
+$routes->match(['get', 'post'], '/save-rules', 'RulesController::saveRules');
+$routes->match(['get', 'post'], '/update-rules/(:segment)', 'RulesController::updateRules/$1');
+$routes->get('/delete-rules/(:segment)', 'RulesController::deleteRules/$1');
 
 //Activity Management
 $routes->get('/admin/kegiatan', 'ActivityController::index');
@@ -70,7 +85,11 @@ $routes->get('/delete-tenaga-pendidik/(:segment)', 'TeacherController::delete/$1
 //Staff Management
 $routes->get('/admin/tenaga-kependidikan', 'StaffController::index');
 $routes->match(['get', 'post'], '/admin/tenaga-kependidikan/create', 'StaffController::create');
-
+$routes->match(['get', 'post'], '/save-staff', 'StaffController::save');
+$routes->get('/admin/tenaga-kependidikan/(:segment)', 'StaffController::read/$1');
+$routes->match(['get', 'post'], '/admin/tenaga-kependidikan/update/(:segment)', 'StaffController::update/$1');
+$routes->match(['get', 'post'], '/save-staff-update/(:segment)', 'StaffController::edit/$1');
+$routes->get('/delete-tenaga-kependidikan/(:segment)', 'StaffController::delete/$1');
 
 /*
  * --------------------------------------------------------------------

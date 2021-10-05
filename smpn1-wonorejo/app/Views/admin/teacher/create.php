@@ -23,10 +23,6 @@
         </div>
     </div>
 
-
-
-
-
     <div class="form-group mb-1">
         <label for="TeacherPhoto">Foto</label>
         <input type="file" class="form-control <?= ($validation->hasError('TeacherPhoto')) ? 'is-invalid' : ''; ?>" name="TeacherPhoto" id="TeacherPhoto" value="<?= old('TeacherPhoto')?>">
@@ -34,8 +30,6 @@
             <?= $validation->getError('TeacherPhoto'); ?>
         </div>
     </div>
-
-
 
     <div class="form-group mb-1">
         <label for="TeacherSubject">Mata Pelajaran</label>
@@ -45,12 +39,10 @@
         </div>
     </div>
    
-
     <div class="form-group mb-3">
         <label for="TeacherDesc">Deskripsi</label>
         <textarea class="form-control summernote" name="TeacherDesc" id="TeacherDesc"></textarea>
     </div>
-
 
      <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end">
         <button type="submit" class="btn btn-primary">Simpan</button>

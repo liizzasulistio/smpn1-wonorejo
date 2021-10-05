@@ -41,7 +41,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     
  <!-- Footer -->
- <footer class="pt-5 mt-5 text-white">
+ <footer class="pt-5 mt-5 text-white" style="background: #084177; padding: 20px;">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3">
@@ -105,7 +105,7 @@
                     <h6><b>SIPENSIL</b></h6>
                     <p>
                         <a class="text-decoration-none" href="https://sipensil.smpn1-wonorejo.sch.id/" style="color:white; text-decoration: none;">
-                            <img src="images/sipensil.png" alt="sipensil" width="200" height="200">
+                            <img src="icons/sipensil.png" alt="sipensil" width="200" height="200">
                         </a>
                     </p>
                 </div>

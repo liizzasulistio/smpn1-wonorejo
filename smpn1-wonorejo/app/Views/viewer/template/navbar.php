@@ -1,7 +1,7 @@
 <?php $uri = service('uri'); ?>
 <!-- Nanti akan digunakan untuk identifikasi tab bar manakah yang sedang dibuka di browser -->
 
-<header>
+<header style="background: #084177;">
   <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height: 60px;"> -->
     <div class="container-fluid top-bar">
       <!-- <div class="container"> -->
@@ -9,7 +9,7 @@
           <div class="top-header">
             <!-- <div class="mx-auto d-sm-flex d-block flex-sm-nowrap"> -->
             <a class="navbar-brand" href="<?= base_url('/'); ?>">
-              <img src="<?= base_url()?>/icons/logo.png" alt="SMPN 1 Wonorejo" width="70" style="border-radius: 100px;" class="mt-2">
+              <img src="/icons/logo.png" alt="SMPN 1 Wonorejo" width="70" style="border-radius: 100px;" class="mt-2">
               <!-- Kalau masih tidak bisa, src untuk gambarnya bisa pakai link yg ini https://i.imgur.com/EOvVWjz.png -->
               <span class="navbar-brand flex-grow-1" style="color:white; text-decoration: none;"><b> SMPN 1 WONOREJO </b></span>
             </a>

@@ -71,12 +71,12 @@ class ViewController extends BaseController
         return view('viewer/profile/teacher_detail', $data);
     }
 
-    public function StaffIndex()
+    public function staffIndex()
     {
         
     }
 
-    public function StaffDetail()
+    public function staffDetail()
     {
 
     }

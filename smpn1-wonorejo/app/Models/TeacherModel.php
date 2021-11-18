@@ -31,6 +31,10 @@ class TeacherModel extends Model
         ->orLike('TeacherName', $keyword)->orLike('TeacherSubject', $keyword);
     }
 
-
-
+    public function getHeadmaster()
+    {
+        return $this->db
+        ->query("SELECT * FROM teachers WHERE TeacherType = 'Kepala Sekolah'")
+        ->getResultArray();
+    }
 }

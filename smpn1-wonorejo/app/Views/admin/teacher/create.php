@@ -44,6 +44,7 @@
         <textarea class="form-control summernote" name="TeacherDesc" id="TeacherDesc"></textarea>
     </div>
 
+    <input type="hidden" name="TeacherType" value="Guru">
      <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end">
         <button type="submit" class="btn btn-primary">Simpan</button>
     </div>

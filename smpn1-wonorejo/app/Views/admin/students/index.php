@@ -3,11 +3,11 @@
 <?= $this->section('content')?>
 
 <div class="container">
-<h3>Tenaga Pendidik</h3>
+<h3>Daftar Siswa</h3>
 <br>
 <div class="row mb-3">
     <div class="col-8">
-        <a href="/admin/tenaga-pendidik/create" class="btn btn-primary mb-2">Tambah</a>
+        <a href="/admin/siswa/create" class="btn btn-primary mb-2">Tambah</a>
     </div>
     <div class="col-4"><form method="get">
         <div class="input-group">
@@ -22,31 +22,31 @@
     <?= session()->getFlashdata('message'); ?>
   </div>
 <?php endif; ?>
-<?php if($teacher):?>
+<?php if($student):?>
     
     <table class="table table-bordered">
         <thead>
             <tr>
                 <th scope="col" style="text-align: center;">No.</th>
-                <th scope="col" style="text-align: center;">NIP</th>
                 <th scope="col" style="text-align: center;">Nama</th>
-                <th scope="col" style="text-align: center;">Mata Pelajaran</th>
-                <th scope="col" style="text-align: center;">Aksi</th>
+                <th scope="col" style="text-align: center;">Jenis Kelamin</th>
+                <th scope="col" style="text-align: center;">Kelas</th>
+                <th scope="col" style="text-align: center;">NamaKelas</th>
             </tr>
         </thead>
 
         <tbody>   
         <?php $i = 1 + (10 * ($currentPage -1)); ?>
-        <?php foreach($teacher as $t):?>
-        <?php if($t['TeacherType'] == 'Guru'):?>
+        <?php foreach($student as $st):?>
          
             <tr>
                 <th scope="col" style="text-align: center;"><?= $i ?>.</th>
-                <td><?= $t['TeacherNIP'] ?></td>
-                <td><?= $t['TeacherName'] ?></td>
-                <td><?= $t['TeacherSubject'] ?></td>
+                <td><?= $st['StudentName'] ?></td>
+                <td><?= $st['StudentGender'] ?></td>
+                <td><?= $st['StudentClass'] ?></td>
+                <td><?= $st['StudentClassName'] ?></td>
                 <td style="text-align: center;">
-                <a href="/admin/tenaga-pendidik/<?= $t['slug'] ?>" class="btn btn-success">Detail</a>
+                <a href="/admin/siswa/<?= $st['slug'] ?>" class="btn btn-success">Detail</a>
                 </td>
             </tr>
 
@@ -58,8 +58,6 @@
     
             <?php $i++; ?> 
    
-      
-            <?php endif;?>
         <?php endforeach; ?>
         
         </tbody>
@@ -69,7 +67,8 @@
     <?php endif; ?>
 
 <!-- Pagination -->
-<?= $pager->links('teacher', 'pager'); ?>
+<?= $pager->links('student', 'pager'); ?>
 
 </div>
 <?= $this->endSection()?>
+

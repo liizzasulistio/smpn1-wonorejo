@@ -8,7 +8,7 @@
 <div class="col-11">
 <?php if($rules): ?>
     <?php foreach($rules as $rl):?>
-        
+    
     <p><?= $rl['RuleField']?></p>
 
     <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end">
@@ -25,12 +25,17 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-            <form action="/upadte-rules/<?= $rl['RuleID']?>" method="post" enctype="multipart/form-data">
+            <form action="/update-rules/<?= $rl['RuleID']?>" method="post" enctype="multipart/form-data">
             <?= csrf_field(); ?>
+            <div class="form-group mb-1">
+                <label for="RuleTitle">Judul</label>
+                <input type="text" class="form-control <?= ($validation->hasError('RuleTitle')) ? 'is-invalid' : ''; ?>" name="RuleTitle" id="RuleTitle" value="<?= set_value('RuleTitle', $rl['RuleTitle']) ?>">
+                <div class="invalid-feedback"></div>
+            </div>
             <div class="form-group mb-3">
                 <label for="RuleField"></label>
                 <textarea class="form-control summernote" name="RuleField" id="RuleField">
-                <?= set_value('RuleField', $h['RuleField']) ?>
+                <?= set_value('RuleField', $rl['RuleField']) ?>
                 </textarea>
             </div>
         </div>
@@ -63,7 +68,17 @@
 <br>
 <form action="/save-rules" method="post" enctype="multipart/form-data">
 <?= csrf_field(); ?> 
+
     <div class="form-group mb-3">
+        <label for="RuleTitle">Judul</label>
+        <input type="text" class="form-control <?= ($validation->hasError('RuleTitle')) ? 'is-invalid' : ''; ?>" name="RuleTitle" id="RuleTitle" value="<?= old('RuleTitle')?>">
+        <div class="invalid-feedback">
+            <?= $validation->getError('RuleTitle'); ?>
+        </div>
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="RuleField">Deskripsi</label>
         <textarea class="form-control summernote" name="RuleField" id="RuleField"></textarea>
     </div>
 

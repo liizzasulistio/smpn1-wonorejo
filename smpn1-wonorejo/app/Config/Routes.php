@@ -38,6 +38,9 @@ $routes->get('/', 'ViewController::index');
 $routes->get('/sejarah', 'ViewController::history');
 $routes->get('/visi-dan-misi', 'ViewController::visionMission');
 $routes->get('/tenaga-pendidik', 'ViewController::teacherIndex');
+$routes->get('/kepala-sekolah', 'ViewController::headmaster');
+$routes->get('/tata-tertib', 'ViewController::rules');
+$routes->get('/daftar-siswa', 'ViewController::students');
 $routes->match(['get', 'post'], '/tenaga-pendidik/(:segment)', 'ViewController::teacherDetail/$1');
 $routes->get('/kegiatan', 'ViewController::activityIndex');
 $routes->get('/galeri', 'ViewController::galleryIndex');
@@ -82,6 +85,10 @@ $routes->match(['get', 'post'], '/admin/tenaga-pendidik/update/(:segment)', 'Tea
 $routes->match(['get', 'post'], '/save-teacher-update/(:segment)', 'TeacherController::edit/$1');
 $routes->get('/delete-tenaga-pendidik/(:segment)', 'TeacherController::delete/$1');
 
+//Headmaster Management
+$routes->get('/admin/kepala-sekolah', 'TeacherController::index_headmaster');
+$routes->get('/delete-kepala-sekolah/(:segment)', 'TeacherController::deleteHeadmaster/$1');
+
 //Staff Management
 $routes->get('/admin/tenaga-kependidikan', 'StaffController::index');
 $routes->match(['get', 'post'], '/admin/tenaga-kependidikan/create', 'StaffController::create');
@@ -90,6 +97,15 @@ $routes->get('/admin/tenaga-kependidikan/(:segment)', 'StaffController::read/$1'
 $routes->match(['get', 'post'], '/admin/tenaga-kependidikan/update/(:segment)', 'StaffController::update/$1');
 $routes->match(['get', 'post'], '/save-staff-update/(:segment)', 'StaffController::edit/$1');
 $routes->get('/delete-tenaga-kependidikan/(:segment)', 'StaffController::delete/$1');
+
+//Student Management
+$routes->get('/admin/daftar-siswa', 'StudentController::index');
+$routes->match(['get', 'post'], '/admin/siswa/create', 'StudentController::create');
+$routes->match(['get', 'post'], '/save-student', 'StudentController::save');
+$routes->get('/admin/siswa/(:segment)', 'StudentController::read/$1');
+$routes->match(['get', 'post'], '/admin/siswa/update/(:segment)', 'StudentController::update/$1');
+$routes->match(['get', 'post'], '/save-siswa-update/(:segment)', 'StudentController::edit/$1');
+$routes->get('/delete-siswa/(:segment)', 'StudentController::delete/$1');
 
 /*
  * --------------------------------------------------------------------

@@ -18,7 +18,7 @@ class RulesController extends BaseController
 	{
 		$data = [
             'title' => 'Tata Tertib',
-            // 'rules' => $this->RuleModel->getRule(),
+            'rules' => $this->RuleModel->getRule(),
             'validation' => \Config\Services::validation(),
         ];
         return view('admin/profile/rules', $data);
@@ -27,6 +27,12 @@ class RulesController extends BaseController
 	public function saveRules()
     {
         if(!$this->validate([
+            'RuleTitle' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Judul tata tertib SMPN 1 Wonorejo harus diisi.'
+                ]
+            ],
             'RuleField' => [
                 'rules' => 'required',
                 'errors' => [
@@ -36,22 +42,28 @@ class RulesController extends BaseController
         ]))
         {
             $validation = \Config\Services::validation();
-            return redirect()->to('admin/rules')->withInput()->with('validation', $validation);
+            return redirect()->to('admin/tata-tertib')->withInput()->with('validation', $validation);
         }
 
-        $userID = session()->get('UserID');
+        // $userID = session()->get('UserID');
         $this->RuleModel->save([
+            'RuleTitle' => $this->mRequest->getVar('RuleTitle'),
             'RuleField' => $this->mRequest->getVar('RuleField'),
-            'RuleCat' => 'Tata Tertib',
-            'UserID_FK' => $userID,
+
         ]);
         session()->setFlashdata('message', 'Data tata tertib telah berhasil ditambahkan.');
-        return redirect()->to('admin/rules');
+        return redirect()->to('admin/tata-tertib');
     }
 
 	public function updateRules($RuleID)
     {
         if(!$this->validate([
+            'RuleTitle' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Judul tata tertib SMPN 1 Wonorejo harus diisi.'
+                ]
+            ],
             'RuleField' => [
                 'rules' => 'required',
                 'errors' => [
@@ -61,22 +73,22 @@ class RulesController extends BaseController
         ]))
         {
             $validation = \Config\Services::validation();
-            return redirect()->to('admin/rules')->withInput()->with('validation', $validation);
+            return redirect()->to('admin/tata-tertib')->withInput()->with('validation', $validation);
         }
         $this->RuleModel->save([
             'RuleID' => $RuleID,
+            'RuleTitle' => $this->mRequest->getVar('RuleTitle'),
             'RuleField' => $this->mRequest->getVar('RuleField'),
-            'UserID_FK' => session()->get('UserID'),
         ]);
     
-        return redirect()->to('/admin/rules');  
+        return redirect()->to('admin/tata-tertib');  
     }
 
 	public function deleteRules($RuleID)
     {
-        $data = $this->RuleModel->find($RuleID);
+        // $data = $this->RuleModel->find($RuleID);
         $this->RuleModel->delete($RuleID);
         session()->setFlashdata('message', 'Data tata tertib telah berhasil dihapus.');
-        return redirect()->to('/admin/rules');
+        return redirect()->to('admin/tata-tertib');
     }
 }

@@ -13,14 +13,13 @@ class RuleModel extends Model
     [
         'RuleTitle',
         'RuleField',
-        'RuleCat',
-        'UserID_FK',
     ];
 
-    // public function getRule()
-    // {
-    //     return $this->db
-    //     ->query("SELECT * FROM rules INNER JOIN users ON rules.UserID_FK = users.UserID WHERE RuleCat = 'Tata Tertib'")
-    //     ->getResultArray();
-    // }
+    // untuk mengambil semua data dari db
+    public function getRule()
+    {
+        return $this->db
+        ->query("SELECT * FROM rules")
+        ->getResultArray();
+    }
 }

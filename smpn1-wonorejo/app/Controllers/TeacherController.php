@@ -35,6 +35,16 @@ class TeacherController extends BaseController
         return view('admin/teacher/index', $data);
     }
 
+    public function index_headmaster()
+    {
+        $data = [
+            'title' => 'Kepala Sekolah',
+            'teacher' => $this->TeacherModel->getHeadmaster(), 
+            'validation' => \Config\Services::validation(),
+        ];
+        return view('admin/profile/headmaster', $data);
+    }
+
     public function create()
     {
         $data = [
@@ -65,7 +75,6 @@ class TeacherController extends BaseController
                     'required' => 'Mata Pelajaran harus diisi.'
                 ]
             ],
-            
         ]))
         {
             $validation = \Config\Services::validation();
@@ -87,6 +96,7 @@ class TeacherController extends BaseController
     
         }
 
+        $teacherType = $this->mRequest->getVar('TeacherType');
         $slug = url_title($this->mRequest->getVar('TeacherName'), '-', true);
         $this->TeacherModel->save([
             'TeacherNIP' => $this->mRequest->getVar('TeacherNIP'),
@@ -95,10 +105,15 @@ class TeacherController extends BaseController
             'TeacherPhoto' => $photoName,
             'TeacherSubject' => $this->mRequest->getVar('TeacherSubject'),
             'TeacherDesc' => $this->mRequest->getVar('TeacherDesc'),
-            'TeacherType' => 'Guru',
+            'TeacherType' => $teacherType
+            //'TeacherType' => 'Guru',
         ]);
         session()->setFlashdata('message', 'Data tenaga pendidik berhasil ditambahkan.');
-        return redirect()->to('admin/tenaga-pendidik');
+        if($teacherType == 'Guru')
+            return redirect()->to('admin/tenaga-pendidik');
+        
+        if($teacherType == 'Kepala Sekolah')
+            return redirect()->to('admin/kepala-sekolah');
     }
 
     public function read($slug)
@@ -123,6 +138,7 @@ class TeacherController extends BaseController
     public function edit($TeacherID)
     {
         $oldTeacher = $this->TeacherModel->getTeacher($this->mRequest->getVar('slug'));
+        
         if($oldTeacher['TeacherName'] == $this->mRequest->getVar('TeacherName'))
         {
             $nameRule = 'required';
@@ -177,9 +193,10 @@ class TeacherController extends BaseController
             $this->TeacherModel->save([
                 'TeacherID' => $TeacherID,
                 'TeacherPhoto' => $photoName,   
-                ]);
+            ]);
         }
 
+        $teacherType = $this->mRequest->getVar('TeacherType');
         $slug = url_title($this->mRequest->getVar('TeacherName'), '-', true);
 
         $this->TeacherModel->save([
@@ -189,18 +206,34 @@ class TeacherController extends BaseController
             'slug' => $slug,
             'TeacherSubject' => $this->mRequest->getVar('TeacherSubject'),
             'TeacherDesc' => $this->mRequest->getVar('TeacherDesc'),
-            'TeacherType' => 'Guru',
+           
         ]);
         session()->setFlashdata('message', 'Data tenaga pendidik telah diubah.');
-        return redirect()->to('/admin/tenaga-pendidik');
+        if($oldTeacher['TeacherType'] == 'Guru')
+        return redirect()->to('admin/tenaga-pendidik');
+    
+        if($oldTeacher['TeacherType'] == 'Kepala Sekolah')
+        return redirect()->to('admin/kepala-sekolah');
     }
 
 
     public function delete($TeacherID)
     {
+        $teacherType = $this->mRequest->getVar('TeacherType');
         $data = $this->TeacherModel->find($TeacherID);
         $this->TeacherModel->delete($TeacherID);
         session()->setFlashdata('message', 'Data tenaga pendidik telah berhasil dihapus.');
-        return redirect()->to('/admin/tenaga-pendidik');
+        return redirect()->to('admin/tenaga-pendidik');
     }
+
+    public function deleteHeadmaster($TeacherID)
+    {
+        $teacherType = $this->mRequest->getVar('TeacherType');
+        $data = $this->TeacherModel->find($TeacherID);
+        $this->TeacherModel->delete($TeacherID);
+        session()->setFlashdata('message', 'Data kepala sekolah telah berhasil dihapus.');
+        return redirect()->to('admin/kepala-sekolah');
+
+    }
+
 }

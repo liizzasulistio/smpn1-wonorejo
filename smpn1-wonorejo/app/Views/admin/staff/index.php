@@ -31,6 +31,7 @@
                 <th scope="col" style="text-align: center;">No.</th>
                 <th scope="col" style="text-align: center;">NUPTK</th>
                 <th scope="col" style="text-align: center;">Nama</th>
+                <th scope="col" style="text-align: center;">Jenis Kelamin</th>
                 <th scope="col" style="text-align: center;">Posisi</th>
                 <th scope="col" style="text-align: center;">Aksi</th>
             </tr>
@@ -44,6 +45,7 @@
                 <th scope="col" style="text-align: center;"><?= $i ?>.</th>
                 <td><?= $t['StaffNUPTK'] ?></td>
                 <td><?= $t['StaffName'] ?></td>
+                <td><?= $t['StaffGender'] ?></td>
                 <td><?= $t['StaffPosition'] ?></td>
                 <td style="text-align: center;">
                 <a href="/admin/tenaga-kependidikan/<?= $t['slug'] ?>" class="btn btn-success">Detail</a>

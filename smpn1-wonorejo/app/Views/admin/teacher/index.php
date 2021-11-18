@@ -30,6 +30,7 @@
                 <th scope="col" style="text-align: center;">No.</th>
                 <th scope="col" style="text-align: center;">NIP</th>
                 <th scope="col" style="text-align: center;">Nama</th>
+                <th scope="col" style="text-align: center;">Jenis Kelamin</th>
                 <th scope="col" style="text-align: center;">Mata Pelajaran</th>
                 <th scope="col" style="text-align: center;">Aksi</th>
             </tr>
@@ -44,6 +45,7 @@
                 <th scope="col" style="text-align: center;"><?= $i ?>.</th>
                 <td><?= $t['TeacherNIP'] ?></td>
                 <td><?= $t['TeacherName'] ?></td>
+                <td><?= $t['TeacherGender'] ?></td>
                 <td><?= $t['TeacherSubject'] ?></td>
                 <td style="text-align: center;">
                 <a href="/admin/tenaga-pendidik/<?= $t['slug'] ?>" class="btn btn-success">Detail</a>

@@ -12,6 +12,7 @@ class TeacherModel extends Model
         'slug',
         'TeacherPhoto',
         'TeacherSubject',
+        'TeacherGender',
         'TeacherType',
         'TeacherDesc',
     ];

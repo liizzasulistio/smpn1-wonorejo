@@ -35,6 +35,17 @@
             <div class="invalid-feedback"></div></div>
 
         <div class="form-group mb-1">
+            <label for="StaffGender">Jenis Kelamin</label>
+            <select aria-label="Default select example" class="form-select <?= ($validation->hasError('StaffGender')) ? 'is-invalid' : ''; ?>" name="StaffGender" id="StaffGender">
+                <option value="Laki-laki" <?= $staff['StaffGender'] == "Laki-laki" ? "selected" : null?>>Laki-Laki</option>
+                <option value="Perempuan" <?= $staff['StaffGender'] == "Perempuan" ? "selected" : null?>>Perempuan</option>
+            </select>
+            <div class="invalid-feedback">
+                <?= $validation->getError('StaffGender'); ?>
+            </div>
+        </div>
+
+        <div class="form-group mb-1">
             <label for="StaffPosition">Posisi</label>
             <input type="text" class="form-control <?= ($validation->hasError('StaffPosition')) ? 'is-invalid' : ''; ?>" name="StaffPosition" id="StaffPosition" value="<?= set_value('StaffPosition', $staff['StaffPosition']) ?>">
             <div class="invalid-feedback"></div></div>

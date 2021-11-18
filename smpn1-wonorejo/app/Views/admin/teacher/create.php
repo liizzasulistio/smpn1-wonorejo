@@ -39,6 +39,17 @@
         </div>
     </div>
    
+    <div class="form-group mb-1">
+        <label for="TeacherGender">Jenis Kelamin</label>
+        <select aria-label="Default select example" class="form-select <?= ($validation->hasError('TeacherGender')) ? 'is-invalid' : ''; ?>" name="TeacherGender" id="TeacherGender" value="">
+            <option value="Laki-laki">Laki-Laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select>
+        <div class="invalid-feedback">
+            <?= $validation->getError('TeacherGender'); ?>
+        </div>
+    </div>
+
     <div class="form-group mb-3">
         <label for="TeacherDesc">Deskripsi</label>
         <textarea class="form-control summernote" name="TeacherDesc" id="TeacherDesc"></textarea>

@@ -25,14 +25,23 @@
     </div>
 
     <div class="form-group mb-1">
+        <label for="StaffGender">Jenis Kelamin</label>
+        <select aria-label="Default select example" class="form-select <?= ($validation->hasError('StaffGender')) ? 'is-invalid' : ''; ?>" name="StaffGender" id="StaffGender" value="">
+            <option value="Laki-laki">Laki-Laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select>
+        <div class="invalid-feedback">
+            <?= $validation->getError('StaffGender'); ?>
+        </div>
+    </div>
+
+    <div class="form-group mb-1">
         <label for="StaffPhoto">Foto</label>
         <input type="file" class="form-control <?= ($validation->hasError('StaffPhoto')) ? 'is-invalid' : ''; ?>" name="StaffPhoto" id="StaffPhoto" value="<?= old('StaffPhoto')?>">
         <div class="invalid-feedback">
             <?= $validation->getError('StaffPhoto'); ?>
         </div>
     </div>
-
-
 
     <div class="form-group mb-1">
         <label for="StaffPosition">Posisi</label>

@@ -1,5 +1,6 @@
 <aside class="sidebar">    
   <div class="d-flex flex-column flex-shrink-0 p-3" style="background: #084177;">
+  <!-- #0D6EFD -->
     <a href="#" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
       <svg class="" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
       <img src="<?= base_url('icons/logo.png')?>" width="70">

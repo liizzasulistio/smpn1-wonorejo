@@ -75,6 +75,12 @@ class TeacherController extends BaseController
                     'required' => 'Mata Pelajaran harus diisi.'
                 ]
             ],
+            'TeacherGender' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Mata Pelajaran harus diisi.'
+                ]
+            ],
         ]))
         {
             $validation = \Config\Services::validation();
@@ -104,6 +110,7 @@ class TeacherController extends BaseController
             'slug' => $slug,
             'TeacherPhoto' => $photoName,
             'TeacherSubject' => $this->mRequest->getVar('TeacherSubject'),
+            'TeacherGender' => $this->mRequest->getVar('TeacherGender'),
             'TeacherDesc' => $this->mRequest->getVar('TeacherDesc'),
             'TeacherType' => $teacherType
             //'TeacherType' => 'Guru',
@@ -167,6 +174,12 @@ class TeacherController extends BaseController
                     'required' => 'Mata Pelajaran harus diisi.'
                 ]
             ],
+            'TeacherGender' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Jenis kelamin harus diisi.'
+                ]
+            ],
         ]))
         {
             $validation = \Config\Services::validation();
@@ -205,6 +218,7 @@ class TeacherController extends BaseController
             'TeacherName' => $this->mRequest->getVar('TeacherName'),
             'slug' => $slug,
             'TeacherSubject' => $this->mRequest->getVar('TeacherSubject'),
+            'TeacherGender' => $this->mRequest->getVar('TeacherGender'),
             'TeacherDesc' => $this->mRequest->getVar('TeacherDesc'),
            
         ]);

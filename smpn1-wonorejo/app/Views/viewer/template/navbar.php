@@ -20,7 +20,7 @@
     </div>
   <!-- </nav> -->
 
-  <div class="container-fluid menu-bar navbar-dark mb-3" data-toggle="sticky-menu">
+  <div class="container-fluid menu-bar navbar-dark" data-toggle="sticky-menu">
     <!-- <div class="container"> -->
       <div class="col-md-12 col-sm-12 col-xs-12">
         <nav class="navbar navbar-expand-lg">

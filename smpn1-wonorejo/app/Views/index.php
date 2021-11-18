@@ -10,7 +10,7 @@
 </div>
 
 <!-- main -->
-<div class="container mt-5">
+<div class="container">
   <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
     <div class="feature col">
       <!-- <div class="feature-icon bg-primary bg-gradient">
@@ -20,7 +20,7 @@
       </div> -->
       <h2>Fasilitas Sekolah</h2>
       <p>Deskripsi nama judul.</p>
-      <a href="#" class="icon-link">
+      <a href="#" class="btn btn-outline-primary mb-2">
         Lebih lanjut
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
@@ -33,7 +33,7 @@
       </div> -->
       <h2>Daftar Tenaga Pendidik</h2>
       <p>Deskripsi nama judul.</p>
-      <a href="#" class="icon-link">
+      <a href="#" class="btn btn-outline-primary mb-2">
         Lebih lanjut
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
@@ -46,7 +46,7 @@
       </div> -->
       <h2>Prestasi</h2>
       <p>Deskripsi nama judul.</p>
-      <a href="#" class="icon-link">
+      <a href="#" class="btn btn-outline-primary mb-2">
         Lebih lanjut
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>

@@ -6,7 +6,7 @@
     <div class="container text-center">
         <h1 style="font-family: 'Roboto', sans-serif;" class="mb-2"><b> KEGIATAN </b></h1>
         <h3 style="font-family: 'Playfair Display', serif;">Portofolio Kegiatan Sekolah</h3>
-        <hr style="width: 10%; margin:auto; height:3px; color:#cd8d7b;">
+        <hr style="width: 10%; margin:auto; height:3px; color:#084177;">
     </div>
 </div>
 
@@ -23,7 +23,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <small class="text-muted">oleh Administrator</small>
                             <small class="text-muted">12 Februari 2021</small>
-                            <small class="text-muted">Kategori</small>
+                            <small class="text-muted">Kategori ini</small>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <small class="text-muted">oleh Administrator</small>
                             <small class="text-muted">12 Februari 2021</small>
-                            <small class="text-muted">kategori</small>
+                            <small class="text-muted">kategori itu</small>
                         </div>
                     </div>
                 </div>

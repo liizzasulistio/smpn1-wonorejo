@@ -9,8 +9,8 @@
         <div class="col-md-10 mx-auto">
 
             <div class="text-center mb-4">
-                <h1 style="font-family: 'Roboto', sans-serif;" class="mt-5"><b> VISI DAN MISI </b></h1>
-                <hr style="width: 10%; margin:auto; height:3px; color:#cd8d7b;">
+                <h2 style="font-family: 'Roboto', sans-serif;" class="mt-5"><b> VISI DAN MISI </b></h2>
+                <hr style="width: 10%; margin:auto; height:3px; color:#084177;">
             </div>
             
             <h4 class="mt-4"><b> VISI </b></h4>

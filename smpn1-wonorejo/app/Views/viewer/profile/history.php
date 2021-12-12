@@ -8,8 +8,8 @@
         <div class="col-md-10 mx-auto">
 
             <div class="text-center mb-4">
-                <h2 style="font-family: 'Roboto', sans-serif;" class="mt-5"><b> SEJARAH SEKOLAH SMPN 1 WONOREJO </b></h2>
-                <hr style="width: 10%; margin:auto; height:3px; color:#cd8d7b;">
+                <h2 style="font-family: 'Roboto', sans-serif;" class="mt-5"><b> SEJARAH </b></h2>
+                <hr style="width: 10%; margin:auto; height:3px; color:#084177;">
             </div>
             
             <!-- <h3 class="text-center mt-4">Sejarah</h3> -->

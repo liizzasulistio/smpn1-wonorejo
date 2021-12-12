@@ -4,8 +4,9 @@
 
 <div class="mb-5">
     <div class="container text-center">
-        <h2 style="font-family: 'Roboto', sans-serif;"><b> GALERI </b></h2>
-        <hr style="width: 10%; margin:auto; height:3px; color:#cd8d7b;">
+        <h1 style="font-family: 'Roboto', sans-serif;" class="mt-5"><b> GALERI </b></h1>
+        <h3 style="font-family: 'Playfair Display', serif;">Dokumentasi Kegiatan Sekolah</h3>
+        <hr style="width: 10%; margin:auto; height:3px; color:#084177;">
     </div>
 </div>
 

@@ -9,6 +9,7 @@ class StaffModel extends Model
     protected $allowedFields = [
         'StaffNUPTK',
         'StaffName',
+        'StaffGender',
         'slug',
         'StaffPhoto',
         'StaffGender',

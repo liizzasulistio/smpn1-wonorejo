@@ -88,17 +88,6 @@ $routes->match(['get', 'post'], '/admin/fasilitas/update/(:segment)', 'FacilityC
 $routes->match(['get', 'post'], '/save-facility-update/(:segment)', 'FacilityController::edit/$1');
 $routes->get('/delete-facility/(:segment)', 'FacilityController::delete/$1');
 
-
-
-//Activity Management
-$routes->get('/admin/kegiatan', 'ActivityController::index');
-$routes->match(['get', 'post'], '/admin/kegiatan/create', 'ActivityController::create');
-$routes->match(['get', 'post'], '/save-activity', 'ActivityController::save');
-$routes->get('/admin/kegiatan/(:segment)', 'ActivityController::read/$1');
-$routes->get('/delete-activity/(:segment)', 'ActivityController::delete/$1');
-$routes->match(['get', 'post'], '/admin/kegiatan/update/(:segment)', 'ActivityController::update/$1');
-$routes->match(['get', 'post'], '/save-activity-update/(:segment)', 'ActivityController::edit/$1');
-
 //Teacher & Headmaster Management
 $routes->get('/admin/tenaga-pendidik', 'TeacherController::index');
 $routes->get('/admin/kepala-sekolah', 'TeacherController::indexHeadmaster');
@@ -120,6 +109,25 @@ $routes->get('/admin/tenaga-kependidikan/(:segment)', 'StaffController::read/$1'
 $routes->match(['get', 'post'], '/admin/tenaga-kependidikan/update/(:segment)', 'StaffController::update/$1');
 $routes->match(['get', 'post'], '/save-staff-update/(:segment)', 'StaffController::edit/$1');
 $routes->get('/delete-staff/(:segment)', 'StaffController::delete/$1');
+
+// Prestasi
+$routes->get('/admin/prestasi', 'AchievementController::index');
+$routes->match(['get', 'post'], '/admin/prestasi/create', 'AchievementController::create');
+$routes->match(['get', 'post'], '/save-achievement', 'AchievementController::save');
+$routes->get('/admin/prestasi/(:segment)', 'AchievementController::read/$1');
+$routes->match(['get', 'post'], '/admin/prestasi/update/(:segment)', 'AchievementController::update/$1');
+$routes->match(['get', 'post'], '/save-achievement-update/(:segment)', 'AchievementController::edit/$1');
+$routes->get('/delete-achievement/(:segment)', 'AchievementController::delete/$1');
+
+//Activity Management
+$routes->get('/admin/kegiatan', 'ActivityController::index');
+$routes->match(['get', 'post'], '/admin/kegiatan/create', 'ActivityController::create');
+$routes->match(['get', 'post'], '/save-activity', 'ActivityController::save');
+$routes->get('/admin/kegiatan/(:segment)', 'ActivityController::read/$1');
+$routes->get('/delete-activity/(:segment)', 'ActivityController::delete/$1');
+$routes->match(['get', 'post'], '/admin/kegiatan/update/(:segment)', 'ActivityController::update/$1');
+$routes->match(['get', 'post'], '/save-activity-update/(:segment)', 'ActivityController::edit/$1');
+
 
 //Comment Management
 $routes->get('/admin/komentar', 'CommentController::index');

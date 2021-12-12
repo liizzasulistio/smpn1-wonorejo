@@ -50,16 +50,6 @@
             <label><input type="radio" name="TeacherGender" value="Perempuan"<?php echo ($teacher['TeacherGender'] == 'Perempuan' ? ' checked' : ''); ?> > Perempuan</label>
         </div>
 
-        <div class="form-group mb-1">
-            <label for="TeacherGender">Jenis Kelamin</label>
-            <select aria-label="Default select example" class="form-select <?= ($validation->hasError('TeacherGender')) ? 'is-invalid' : ''; ?>" name="TeacherGender" id="TeacherGender">
-                <option value="Laki-laki" <?= $teacher['TeacherGender'] == "Laki-laki" ? "selected" : null?>>Laki-Laki</option>
-                <option value="Perempuan" <?= $teacher['TeacherGender'] == "Perempuan" ? "selected" : null?>>Perempuan</option>
-            </select>
-            <div class="invalid-feedback">
-                <?= $validation->getError('TeacherGender'); ?>
-            </div>
-        </div>
     </div>
 
 

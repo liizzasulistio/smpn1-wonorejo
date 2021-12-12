@@ -86,7 +86,6 @@ class Filters extends BaseConfig
 				'/save-facility-update/*', 'FacilityController/edit/*',
 				'/delete-facility/*', 'FacilityController/delete/*',
 
-
 				// Headmaster & Teacher
 				'/admin/tenaga-pendidik', 'TeacherController/index',
 				'/admin/kepala-sekolah', 'TeacherController/indexHeadmaster',
@@ -105,7 +104,13 @@ class Filters extends BaseConfig
 				'/save-staff-update/*', 'StaffController/edit/*',
 				'/delete-staff/*', 'StaffController/delete/*',
 
-				// Awards
+				// Achievement
+				'/admin/prestasi', 'AchievementController/index',
+				'/admin/prestasi/*', 'AchievementController/*',
+				'/save-achievement', 'AchievementController/save',
+				'/save-achievement-update/*', 'AchievementController/edit/*',
+				'/delete-achievement/*', 'AchievementController/delete/*',
+
 				// Rules
 				// Students
 				// Code of Conduct

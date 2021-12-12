@@ -30,7 +30,6 @@ class FacilityController extends BaseController
         $currentPage = $this->mRequest->getVar('pager') ? $this->mRequest->getVar('pager') : 1;
         $data = [
             'title' => 'Fasilitas',
-            // 'tenagaPendidik' => $this->FacilityModel->getFacility(), 
             'facility' => $this->FacilityModel->paginate(10, 'facility'), 
             'pager' => $facility->pager,
             'currentPage' => $currentPage,
@@ -49,12 +48,11 @@ class FacilityController extends BaseController
 
     public function save()
     {
-        $teacherType = $this->mRequest->getVar('TeacherType');
         if(!$this->validate([
             'FacilityName' => [
                 'rules' => 'required',
                 'errors' => [
-                    'required' => 'Nama fasilitas IP harus diisi.'
+                    'required' => 'Nama fasilitas harus diisi.'
                 ]
             ],
             'FacilityDesc' => [

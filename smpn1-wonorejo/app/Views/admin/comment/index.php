@@ -92,22 +92,6 @@
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Delete Modal -->
 <div class="modal fade" id="deleteComment<?=$i?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="deleteComment<?=$i?>" aria-hidden="true">
     <div class="modal-dialog modal-lg">

@@ -12,12 +12,6 @@
 
 <div class="py-5">
     <div class="container container-fluid">
-        <select class="form-select mb-5" aria-label="Default select example">
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-        </select>
         <!-- news cards -->
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">

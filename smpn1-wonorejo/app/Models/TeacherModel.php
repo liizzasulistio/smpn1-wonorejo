@@ -12,6 +12,7 @@ class TeacherModel extends Model
         'slug',
         'TeacherPhoto',
         'TeacherSubject',
+        'TeacherGender',
         'TeacherType',
         'TeacherDesc',
     ];
@@ -20,7 +21,9 @@ class TeacherModel extends Model
     {
         if($slug == false)
         {
-            return $this->findAll();
+            return $this->db
+            ->query("SELECT * FROM teachers WHERE TeacherType = 'Guru'")
+            ->getResultArray();
         }
         return $this->where(['slug' => $slug])->first();
     }
@@ -31,6 +34,12 @@ class TeacherModel extends Model
         ->orLike('TeacherName', $keyword)->orLike('TeacherSubject', $keyword);
     }
 
+    public function getHeadmaster()
+    {
+        return $this->db
+        ->query("SELECT * FROM teachers WHERE TeacherType = 'Kepala Sekolah'")
+        ->getResultArray();
+    }
 
 
 }

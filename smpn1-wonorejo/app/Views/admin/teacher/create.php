@@ -3,7 +3,10 @@
 <?= $this->section('content')?>
 
 <div class="container">
-<h3>Tambah Data Guru</h3>
+<h2><strong>Tambah Data Guru</strong></h2>
+<hr class="my-3">
+<div class="card mb-3 shadow-sm">
+<div class="card-body">
 <form action="/save-teacher" method="post" enctype="multipart/form-data">
     <?= csrf_field(); ?>
 
@@ -38,16 +41,26 @@
             <?= $validation->getError('TeacherSubject'); ?>
         </div>
     </div>
-   
+
+    <div class="form-group mb-1 mt-2">
+        <label for="TeacherGender">Jenis Kelamin</label>
+            <label><input type="radio" name="TeacherGender" value="Laki-laki"> Laki-laki</label>
+            <label><input type="radio" name="TeacherGender" value="Perempuan"> Perempuan</label>
+        <div class="invalid-feedback">
+            <?= $validation->getError('TeacherGender'); ?>
+        </div>
+    </div>
+    
     <div class="form-group mb-3">
         <label for="TeacherDesc">Deskripsi</label>
         <textarea class="form-control summernote" name="TeacherDesc" id="TeacherDesc"></textarea>
     </div>
+    <input type="hidden" name="TeacherType" value="Guru">
 
      <div class="col-12 d-grid gap-2 d-md-flex justify-content-md-end">
         <button type="submit" class="btn btn-primary">Simpan</button>
     </div>
     
     </form>
-</div>
+</div></div>
 <?= $this->endSection()?>

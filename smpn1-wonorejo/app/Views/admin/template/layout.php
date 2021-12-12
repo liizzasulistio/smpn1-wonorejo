@@ -38,7 +38,7 @@
 </head>
 
 <!-- Body -->
-<body>
+<body style="background-color: #F3F1F5;">
     <!-- Digunakan untuk render sidebar dan konten dari website nantinya -->
     <div class="row">
         <div class="col-3">

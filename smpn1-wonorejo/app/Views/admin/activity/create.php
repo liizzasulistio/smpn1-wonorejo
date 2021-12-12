@@ -4,9 +4,10 @@
 
 
 <div class="container">
-    <h3>Buat Kegiatan</h3>
-    <br>
-
+<h2><strong>Tambah Kegiatan</strong></h2>
+<hr class="my-3">
+<div class="card mb-3 shadow-sm">
+<div class="card-body">
     <form action="/save-activity" method="post" enctype="multipart/form-data">
     <?= csrf_field(); ?>  
     <div class="row">
@@ -43,5 +44,5 @@
 
 
     </form>
-</div>
+</div></div></div>
 <?= $this->endSection()?>

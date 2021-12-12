@@ -6,7 +6,8 @@ use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
 use CodeIgniter\Filters\Honeypot;
-use \App\Filters\AuthFilter;
+use App\Filters\FilterAdmin;
+use App\Filters\FilterWriter;
 
 class Filters extends BaseConfig
 {
@@ -20,7 +21,8 @@ class Filters extends BaseConfig
 		'csrf'     => CSRF::class,
 		'toolbar'  => DebugToolbar::class,
 		'honeypot' => Honeypot::class,
-		'authfilter' => AuthFilter::class
+		'filteradmin' => FilterAdmin::class,
+		'filterwriter' => FilterWriter::class,
 	];
 
 	/**
@@ -30,28 +32,101 @@ class Filters extends BaseConfig
 	 * @var array
 	 */
 	public $globals = [
+		// can be access before login
 		'before' => [
 			// 'honeypot',
 			// 'csrf',
-			'authfilter' => ['except' => [
+			'filteradmin' => ['except' => [
 				'/', 'ViewController/index',
 				'/login', 'AuthController/login',
 				'/kegiatan', 'ViewController/activityIndex',
-				'/tenaga-pendidik', 'ViewController/teacherIndex',
-				'/tenaga-pendidik/*', 'ViewController/teacherDetail',
-				'/galeri', 'ViewController/galleryIndex',
-			]]
+			]],
 		],
+		// can be access after login
 		'after'  => [
 			// 'honeypot',
 			'toolbar',
-			'authfilter' => ['except' => [
+			'filteradmin' => ['except' => [
+				// Viewer Side
 				'/', 'ViewController/index',
-				'/login', 'AuthController/login',
+				'/sejarah', 'ViewController/history',
+				'/visi-dan-misi', 'ViewController/vissionMission',
+				'/fasilitas', 'ViewController/facility',
+				'/tenaga-pendidik', 'ViewController/teacherIndex',
+				'/tenaga-pendidik/*', 'ViewController/teacherDetail/*',
+				'/kegiatan', 'ViewController/activityIndex',
+				'/kegiatan/*', 'ViewController/*',
+
+				// Admin Side & Auth
 				'/dashboard', 'AdminController/dashboard',
+				// Update Profile
 				'/logout', 'AuthController/logout',
+
+				// User
+				'/pengguna', 'UserController/index',
+				'/pengguna/*', 'UserController/*',
+				'/save-user', 'UserController/save',
+				'/save-user-update/*', 'UserController/edit/*',
+				'/delete-user/*', 'UserController/delete/*',
+
+				// Profile
+				'/admin/visi-misi', 'ProfileController/index',
+				'/admin/visi-misi/*', 'ProfileController/*',
+				'/admin/sejarah', 'ProfileController/history',
+				'/save-profile', 'ProfileController/save',
+				'/save-profile-update/*', 'ProfileController/edit/*',
+				'/update-history/*', 'ProfileController/updateHistory/*',
+				'/delete-history/*', 'ProfileController/deleteHistory/*',
+				'/delete-profile/*', 'ProfileController/delete/*',
+
+				// Facility
+				'/admin/fasilitas', 'FacilityController/index',
+				'/admin/fasilitas/*', 'FacilityController/*',
+				'/save-facility', 'FacilityController/save',
+				'/save-facility-update/*', 'FacilityController/edit/*',
+				'/delete-facility/*', 'FacilityController/delete/*',
+
+
+				// Headmaster & Teacher
+				'/admin/tenaga-pendidik', 'TeacherController/index',
+				'/admin/kepala-sekolah', 'TeacherController/indexHeadmaster',
+				'/admin/tenaga-pendidik/*', 'TeacherController/*',
+				'/save-teacher', 'TeacherController/save',
+				'/save-teacher-update/*', 'TeacherController/edit/*',
+				'/admin/kepala-sekolah/update/*', 'TeacherController/updateHeadmaster/*',
+				'/save-headmaster-update/*', 'TeacherController/edit/*',
+				'/delete-teacher/*', 'TeacherController/delete/*',
+				'/delete-headmaster/*', 'TeacherController/deleteHeadmaster/*',
+
+				// Staff
+				'/admin/tenaga-kependidikan', 'StaffController/index',
+				'/admin/tenaga-kependidikan/*', 'StaffController/*',
+				'/save-staff', 'StaffController/save',
+				'/save-staff-update/*', 'StaffController/edit/*',
+				'/delete-staff/*', 'StaffController/delete/*',
+
+				// Awards
+				// Rules
+				// Students
+				// Code of Conduct
+				// Calendar
+				// Activity
+				'/admin/kegiatan', 'ActivityController/index',
+				'/admin/kegiatan/*', 'ActivityController/*',
+				'/save-activity', 'ActivityController/save',
+				'/save-activity-update/*', 'ActivityController/edit/*',
+				'/delete-activity/*', 'ActivityController/delete/*',
+
+				// Announcement
+				// Comment
+				'/admin/komentar', 'CommentController/index',
+				'/save-comment-update/*', 'CommentController/edit/*',
+				'/delete-comment/*', 'CommentController/delete/*',
 				
-			]]
+				// Gallery
+				// Change Profile
+				// Logout
+			]],
 			
 		],
 	];

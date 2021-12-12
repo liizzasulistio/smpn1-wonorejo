@@ -24,7 +24,9 @@ class TeacherController extends BaseController
         {
             $teacher = $this->TeacherModel;
         }
-        $currentPage = $this->request->getVar('pager') ? $this->request->getVar('pager') : 1;
+        // dd($teacher);
+        // var_dump($teacher);
+        $currentPage = $this->mRequest->getVar('pager') ? $this->mRequest->getVar('pager') : 1;
         $data = [
             'title' => 'Tenaga Pendidik',
             // 'tenagaPendidik' => $this->TeacherModel->getTeacher(), 
@@ -33,6 +35,16 @@ class TeacherController extends BaseController
             'currentPage' => $currentPage,
         ];
         return view('admin/teacher/index', $data);
+    }
+
+    public function indexHeadmaster()
+    {
+        $data = [
+           'title' => 'Kepala Sekolah',
+           'teacher' => $this->TeacherModel->getHeadmaster(),
+           'validation' => \Config\Services::validation(),
+        ];
+        return view('admin/profile/headmaster', $data);
     }
 
     public function create()
@@ -46,6 +58,7 @@ class TeacherController extends BaseController
 
     public function save()
     {
+        $teacherType = $this->mRequest->getVar('TeacherType');
         if(!$this->validate([
             'TeacherNIP' => [
                 'rules' => 'required',
@@ -65,11 +78,20 @@ class TeacherController extends BaseController
                     'required' => 'Mata Pelajaran harus diisi.'
                 ]
             ],
+            'TeacherGender' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Jenis kelamin harus diisi.'
+                ]
+            ],
             
         ]))
         {
             $validation = \Config\Services::validation();
-            return redirect()->to('admin/tenaga-pendidik/create')->withInput()->with('validation', $validation);
+            if($teacherType == 'Guru')
+                return redirect()->to('admin/tenaga-pendidik/create')->withInput()->with('validation', $validation);
+            if($teacherType == 'Kepala Sekolah')
+                return redirect()->to('admin/kepala-sekolah')->withInput()->with('validation', $validation);
         }
 
         chmod('./images/', 0777);
@@ -87,6 +109,7 @@ class TeacherController extends BaseController
     
         }
 
+      
         $slug = url_title($this->mRequest->getVar('TeacherName'), '-', true);
         $this->TeacherModel->save([
             'TeacherNIP' => $this->mRequest->getVar('TeacherNIP'),
@@ -94,11 +117,15 @@ class TeacherController extends BaseController
             'slug' => $slug,
             'TeacherPhoto' => $photoName,
             'TeacherSubject' => $this->mRequest->getVar('TeacherSubject'),
+            'TeacherGender' => $this->mRequest->getVar('TeacherGender'),
             'TeacherDesc' => $this->mRequest->getVar('TeacherDesc'),
-            'TeacherType' => 'Guru',
+            'TeacherType' => $teacherType,
         ]);
-        session()->setFlashdata('message', 'Data tenaga pendidik berhasil ditambahkan.');
-        return redirect()->to('admin/tenaga-pendidik');
+        session()->setFlashdata('message', 'Data tenaga pendidik telah berhasil ditambahkan.');
+        if($teacherType == 'Guru')
+            return redirect()->to('admin/tenaga-pendidik');
+        if($teacherType == 'Kepala Sekolah')
+            return redirect()->to('admin/kepala-sekolah');
     }
 
     public function read($slug)
@@ -120,9 +147,20 @@ class TeacherController extends BaseController
         return view('admin/teacher/update', $data);
     }
 
+    public function updateHeadmaster($slug)
+    {
+        $data = [
+            'title' => 'Ubah Data Guru',
+            'teacher' => $this->TeacherModel->getTeacher($slug),
+            'validation' => \Config\Services::validation(),
+        ];
+        return view('admin/profile/headmaster_update', $data);
+    }
+
     public function edit($TeacherID)
     {
         $oldTeacher = $this->TeacherModel->getTeacher($this->mRequest->getVar('slug'));
+        $teacherType = $this->mRequest->getVar('TeacherType');
         if($oldTeacher['TeacherName'] == $this->mRequest->getVar('TeacherName'))
         {
             $nameRule = 'required';
@@ -154,7 +192,10 @@ class TeacherController extends BaseController
         ]))
         {
             $validation = \Config\Services::validation();
-            return redirect()->to('/update-guru/'.$this->mRequest->getVar('slug'))->withInput()->with('validation', $validation);
+            if($teacherType == 'Guru')
+                return redirect()->to('/admin/tenaga-pendidik/update/'.$this->mRequest->getVar('slug'))->withInput()->with('validation', $validation);
+            if($teacherType == 'Kepala Sekolah')
+                return redirect()->to('admin/kepala-sekolah/update/'.$this->mRequest->getVar('slug'))->withInput()->with('validation', $validation);
         }
         $photoFile = $this->mRequest->getFile('TeacherPhoto');
         if($photoFile->getError() != 4)
@@ -181,26 +222,39 @@ class TeacherController extends BaseController
         }
 
         $slug = url_title($this->mRequest->getVar('TeacherName'), '-', true);
-
         $this->TeacherModel->save([
             'TeacherID' => $TeacherID,
             'TeacherNIP' => $this->mRequest->getVar('TeacherNIP'),
             'TeacherName' => $this->mRequest->getVar('TeacherName'),
             'slug' => $slug,
             'TeacherSubject' => $this->mRequest->getVar('TeacherSubject'),
+            'TeacherGender' => $this->mRequest->getVar('TeacherGender'),
             'TeacherDesc' => $this->mRequest->getVar('TeacherDesc'),
-            'TeacherType' => 'Guru',
+            'TeacherType' => $teacherType,
         ]);
-        session()->setFlashdata('message', 'Data tenaga pendidik telah diubah.');
-        return redirect()->to('/admin/tenaga-pendidik');
+        if($teacherType == 'Guru')
+        {
+            session()->setFlashdata('message', 'Data tenaga pendidik telah berhasil diubah.');
+            return redirect()->to('admin/tenaga-pendidik');
+        }
+        if($teacherType == 'Kepala Sekolah')
+        return redirect()->to('admin/kepala-sekolah');
+
     }
 
 
     public function delete($TeacherID)
     {
-        $data = $this->TeacherModel->find($TeacherID);
+        $this->TeacherModel->find($TeacherID);
         $this->TeacherModel->delete($TeacherID);
         session()->setFlashdata('message', 'Data tenaga pendidik telah berhasil dihapus.');
-        return redirect()->to('/admin/tenaga-pendidik');
+        return redirect()->to('admin/tenaga-pendidik');
+    }
+    
+    public function deleteHeadmaster($TeacherID)
+    {
+        $this->TeacherModel->find($TeacherID);
+        $this->TeacherModel->delete($TeacherID);
+        return redirect()->to('admin/kepala-sekolah');
     }
 }

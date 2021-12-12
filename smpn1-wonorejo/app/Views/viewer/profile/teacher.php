@@ -12,7 +12,7 @@
     <div class="row text-center pt-3">
    
         <?php foreach($teacher as $t): ?>
-
+            <?php if($t['TeacherType'] == 'Guru'):?>
             <div class="col-md-3">
                 <?php if($t['TeacherPhoto'] == null):?>
                     <img src="<?= base_url('./icons/user.png')?>"  class="bd-placeholder-img ava-img">
@@ -22,6 +22,7 @@
                 <h4 class="mt-2"><a  href="<?= base_url('/tenaga-pendidik/'.$t['slug']); ?>" style="color:black; text-decoration: none;"><?= $t['TeacherName']?></a></h4>
                 <p><?= $t['TeacherSubject']?></p>
             </div>
+            <?php endif;?>
 <?php endforeach; ?>
           
 

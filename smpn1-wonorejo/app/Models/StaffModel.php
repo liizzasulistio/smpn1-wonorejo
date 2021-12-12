@@ -11,6 +11,7 @@ class StaffModel extends Model
         'StaffName',
         'slug',
         'StaffPhoto',
+        'StaffGender',
         'StaffPosition',
         'StaffDesc',
     ];
@@ -27,6 +28,7 @@ class StaffModel extends Model
     public function search($keyword)
     {
         return $this->table('staffs')->like('StaffNUPTK', $keyword)
-        ->orLike('StaffName', $keyword)->orLike('StaffPosition', $keyword);
+        ->orLike('StaffName', $keyword)->orLike('StaffGender', $keyword)
+        ->orLike('StaffPosition', $keyword);
     }
 }

@@ -12,7 +12,6 @@ class UserModel extends Model
         'UserUsername',
         'UserPassword',
         'UserRole',
-        'UserStatus',
     ];
     protected $beforeInsert = ['beforeInsert'];
     protected $beforeUpdate = ['beforeUpdate'];
@@ -42,5 +41,16 @@ class UserModel extends Model
             return $this->findAll();
         }
         return $this->where(['UserUsername' => $UserUsername])->first();
+    }
+
+    public function search($keyword)
+    {
+        return $this->table('users')->like('UserName', $keyword)
+        ->orLike('UserUsername', $keyword)->orLike('UserRole', $keyword);
+    }
+
+    public function countUser()
+    {
+        return $this->builder()->countAllResults(false);
     }
 }

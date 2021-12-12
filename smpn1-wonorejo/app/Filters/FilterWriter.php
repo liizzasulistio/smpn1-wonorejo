@@ -3,11 +3,11 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use CodeIgniter\Filters\FilterInterface;
 
-class AuthFilter implements FilterInterface
+class FilterWriter implements FilterInterface
 {
     public function before(RequestInterface $request, $arguments = null)
     {
-        if(session()->get('isLoggedIn') != true)
+        if(session()->get('UserRole') == '')
         {
             return redirect()->to('login');
         }
@@ -15,9 +15,9 @@ class AuthFilter implements FilterInterface
 
     public function after(RequestInterface $request, ResponseInterface $response, $arguments = null)
     {
-        if(session()->get('isLoggedIn') == true)
+        if(session()->get('UserRole') == 'Penulis')
         {
-            
+            // return redirect()->to('penulis/kegiatan');
         }
     }
 }

@@ -14,13 +14,18 @@
             
             <!-- <h3 class="text-center mt-4">Sejarah</h3> -->
             <!-- <h4 class="text-center">NIP</h4> -->
-            <P class="d-flex justify-content-between my-3">
-                SMP Negeri 1 Wonorejo Kabupaten Pasuruan adalah lembaga pendidikan formal yang berada dibawah pembinaan Dinas Pendidikan Kabupaten Pasuruan.
+            <?php foreach($history as $h):?>
+                <?php if($h['ProfileCat'] == 'Sejarah'):?>
+            <p class="d-flex justify-content-between my-3">
+                <!-- SMP Negeri 1 Wonorejo Kabupaten Pasuruan adalah lembaga pendidikan formal yang berada dibawah pembinaan Dinas Pendidikan Kabupaten Pasuruan.
                 SMP Negeri 1 Wonorejo berada ditengah-tengah masyarakat atau lingkungan yang agamis yang mayoritas penduduknya adalah
                 muslim yang taat pada ajaran atau syariat agama Islam.
                 Disekitar SMP Negeri 1 Wonorejo banyak berdiri pondok-pondok pesantren dan lembaga pendidikan formal yang bernafaskan keagamaan,
-                diantarannya Pondok Pesantren Terpadu Al-Yasini Wonorejo, Pondok Pesantern Sidogiri Kraton, MTs Negeri Wonorejo, MTs Al-Yasin dan lain-lain.
-            </P>
+                diantarannya Pondok Pesantren Terpadu Al-Yasini Wonorejo, Pondok Pesantern Sidogiri Kraton, MTs Negeri Wonorejo, MTs Al-Yasin dan lain-lain. -->
+            
+                <?= $h['ProfileField']?>
+            </p>
+            <?php endif;?><?php endforeach;?>
         </div>
     </div>
 </div>

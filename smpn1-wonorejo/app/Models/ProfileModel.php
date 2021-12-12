@@ -20,4 +20,21 @@ class ProfileModel extends Model
         ->query("SELECT * FROM profiles INNER JOIN users ON profiles.UserID_FK = users.UserID WHERE ProfileCat = 'Sejarah'")
         ->getResultArray();
     }
+
+    public function getProfile($id = false)
+    {
+        if($id == false)
+        {
+            return $this->db
+            ->query("SELECT * FROM profiles INNER JOIN users ON profiles.UserID_FK = users.UserID WHERE ProfileCat = 'Visi' OR ProfileCat ='Misi' OR ProfileCat = 'Indikator' OR ProfileCat = 'Tujuan'")
+            ->getResultArray();
+        }
+       return $this->where(['ProfileID' => $id])->first();
+    }
+
+    public function search($keyword)
+    {
+        return $this->table('profiles')->like('ProfileCat', $keyword)
+        ->orLike('ProfileField', $keyword);
+    }
 }

@@ -1,14 +1,24 @@
 <?php
 namespace App\Controllers;
 
+use App\Models\ProfileModel;
+use App\Models\FacilityModel;
 use App\Models\TeacherModel;
+use App\Models\ActivityModel;
+use App\Models\CommentModel;
 
 class ViewController extends BaseController
 {
 
     public function __construct()
     {
+        helper('form');
         $this->TeacherModel = new TeacherModel();
+        $this->ProfileModel = new ProfileModel();
+        $this->FacilityModel = new FacilityModel();
+        $this->ActivityModel = new ActivityModel();
+        $this->CommentModel = new CommentModel();
+
     }
 
     //showing landing page to viewer
@@ -16,14 +26,17 @@ class ViewController extends BaseController
     {
         $data = [
             'title' => 'SMPN 1 WONOREJO',
+            'profile' => $this->ProfileModel->getHistory(),
         ];
         return view('index', $data);
     }
 
+    // Profile Menu
     public function history()
     {
         $data = [
             'title' => 'Sejarah',
+            'history' => $this->ProfileModel->getHistory(),
         ];
         return view('viewer/profile/history', $data);
     }
@@ -36,7 +49,17 @@ class ViewController extends BaseController
         return view('viewer/profile/vision-mission', $data);
     }
 
-    // For Viewer
+    public function facility()
+    {
+        $data = [
+            'title' => 'Fasilitas',
+            'facility' => $this->FacilityModel->getFacility(),
+        ];
+        return view('viewer/facility/facility', $data);
+    }
+
+
+
     public function activityIndex()
     {
         $data = [
@@ -45,11 +68,15 @@ class ViewController extends BaseController
         return view('viewer/activity/activity', $data);
     }
   
-    public function activityDetail()
+    public function activityDetail($slug)
     {
         $data = [
             'title' => 'Kegiatan',
+            'activity' => $this->ActivityModel->getActivity($slug),
+            'comment' => $this->CommentModel->getComment($slug),
+            'validation' => \Config\Services::validation(),
         ];
+        // dd($data);
         return view('viewer/activity/activity_detail', $data);
     }
 
